@@ -66,6 +66,9 @@ body {
     line-height: 49px;
     text-align: center;
 }
+.footer .footer-button img{
+    height: 100%;
+}
 
 .main-content {
     padding-top: 64px;

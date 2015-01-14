@@ -5,13 +5,13 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>D16152EA-4FE9-4C0A-A019-61B7BCA8580C</string>
+	<string>2F97FF79-E3EE-4DCA-A20C-6D74DD8E685A</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Jeanine</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>2E1339782B7D3AAD94DC8A5A978C23C3679CBA0E</key>
-		<string>https://github.com/Jianglin-Jeanine/cordova_demo.git</string>
+		<string>github.com:Jianglin-Jeanine/cordova_demo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>platforms/ios/Jeanine.xcodeproj</string>
@@ -21,7 +21,7 @@
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Jianglin-Jeanine/cordova_demo.git</string>
+	<string>github.com:Jianglin-Jeanine/cordova_demo.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>2E1339782B7D3AAD94DC8A5A978C23C3679CBA0E</string>
 			<key>IDESourceControlWCCName</key>
-			<string>jeanine</string>
+			<string>cordova_demo</string>
 		</dict>
 	</array>
 </dict>
