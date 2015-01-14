@@ -32,7 +32,12 @@
     </head>
     <body>
         <div class="header">
-            <div class="header-title">Jeanine</div>
+            <div class="header-title" id="common-title">Jeanine</div>
+            <div class="header-title" id="search-title">
+                <form>
+                    <input id="header-search-input" type="text" placeholder="placeholder"><i class="fa fa-search"></i>
+                </form>
+            </div>
             <div class="header-right"><i class="fa fa-search"></i></div>
         </div>
         <div class="main-content">
@@ -93,7 +98,8 @@
         </div>
         <script type="text/javascript">
             $(document).ready(function() {
-                $("#guanzhu-posts").hide()
+                $("#guanzhu-posts").hide();
+                $("#search-title").hide();
                 $("#jingxuan").click(function() {
                     $("#jingxuan-posts").show();
                     $("#guanzhu-posts").hide();
@@ -102,6 +108,12 @@
                     $("#jingxuan-posts").hide();
                     $("#guanzhu-posts").show();
                 });
+                $(".header-right").click(function() {
+                    $("#common-title").hide();
+                    $(".header-right").hide();
+                    $("#search-title").show();
+                })
+                
             });
         </script>
     </body>
