@@ -34,6 +34,21 @@ body {
     text-align: center;
 }
 
+.header .header-title form {
+    width: 200px;
+}
+
+.header .header-title input {
+    height: 30px;
+    line-height: 28px;
+    padding: 0;
+    border: 0;
+    padding-left: 5px;
+    border-radius: 15px;
+    width: 170px;
+    margin-right: 10px;
+}
+
 .header .header-left {
     line-height: 44px;
     position: absolute;
