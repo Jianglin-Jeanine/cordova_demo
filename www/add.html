@@ -46,7 +46,12 @@
             <a href="shop.html"><div class="footer-button"><img src="img/bottom_bar/bottomBarShop.png"></div></a>
         </div>
         <script type="text/javascript">
-            $(".main-content#add").height($(window).height() -64 - 49);
+            $(".main-content#add").height(($(window).height() - 64 - 49).toString() + 'px');
+            var totalHeight = $(".main-content#add").height();
+            var singleHeight = (totalHeight - 340) / 2
+            $(".add-button").height(singleHeight.toString() + 'px');
+            $(".add-button").width(singleHeight.toString() + 'px');
+            $(".add-button img").height(singleHeight.toString() + 'px');
         </script>
     </body>
 </html>

@@ -256,7 +256,6 @@ body {
 }
 
 /* add page */
-
 .main-content#add {
     background: url("../img/pages/add/bg.png")
 }
@@ -266,8 +265,16 @@ body {
     width: 140px;
     text-align: center;
     margin: 0 auto;
-    margin-top: 20px;
 }
+
+.main-content .add-button#add-dapei {
+    margin-top: 150px;
+}
+
+.main-content .add-button#add-guandian {
+    margin-top: 40px;
+}
+
 
 .main-content .add-button img {
     height: 140px;
