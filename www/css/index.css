@@ -81,6 +81,9 @@ body {
     text-align: center;
     border-top: 1px solid #000000;
 }
+.footer .footer-button.selected {
+    background: #bababa;
+}
 .footer .footer-button img{
     height: 100%;
 }
@@ -90,6 +93,13 @@ body {
     padding-bottom: 49px;
 }
 /* home page */
+.main-content .content-choose {
+    height: 35px;
+    background: white;
+    line-height: 35px;
+    width: 100%;
+}
+
 .main-content .content-choose {
     height: 35px;
     background: white;
