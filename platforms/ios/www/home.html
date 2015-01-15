@@ -42,7 +42,7 @@
         </div>
         <div class="main-content">
             <div class="content-choose">
-                <div id="jingxuan">精选</div>
+                <div class="selected" id="jingxuan">精选</div>
                 <div id="guanzhu">我的关注</div>
             </div>
             <!-- 精选的posts -->
@@ -90,7 +90,7 @@
             </div>
         </div>
         <div class="footer">
-            <div class="footer-button"><a href="home.html"><img src="img/bottom_bar/bottomBarHome.png"></a></div>
+            <div class="footer-button selected"><a href="home.html"><img src="img/bottom_bar/bottomBarHome.png"></a></div>
             <div class="footer-button"><a href="explore.html"><img src="img/bottom_bar/bottomBarExplore.png"></a></div>
             <div class="footer-button"><a href="add.html"><img src="img/bottom_bar/bottomBarAdd.png"></a></div>
             <div class="footer-button"><a href="profile.html"><img src="img/bottom_bar/bottomBarProfile.png"></a></div>
@@ -102,17 +102,27 @@
                 $("#search-title").hide();
                 $("#jingxuan").click(function() {
                     $("#jingxuan-posts").show();
+                    $("#jingxuan").addClass("selected");
                     $("#guanzhu-posts").hide();
+                    $("#guanzhu").removeClass("selected");
                 });
                 $("#guanzhu").click(function() {
                     $("#jingxuan-posts").hide();
+                    $("#jingxuan").removeClass("selected");
                     $("#guanzhu-posts").show();
+                    $("#guanzhu").addClass("selected");
                 });
                 $(".header-right").click(function() {
                     $("#common-title").hide();
                     $(".header-right").hide();
                     $("#search-title").show();
-                })
+                    $("#header-search-input").focus();
+                });
+                $("#header-search-input").focusout(function() {
+                    $("#common-title").show();
+                    $(".header-right").show();
+                    $("#search-title").hide();
+                });
                 
             });
         </script>
