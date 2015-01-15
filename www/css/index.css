@@ -17,7 +17,7 @@
  * under the License.
  */
 body {
-    background: yellow;
+    background: white;
     margin: 0px;
 }
 .header {
@@ -55,6 +55,11 @@ body {
     left: 20px;
     bottom: 0px;
 }
+
+.header .header-left .icon {
+    height: 20px;
+}
+
 
 .header .header-right {
     line-height: 44px;
@@ -157,10 +162,78 @@ body {
 .main-content .posts .post .post-content .post-tag {
     color: blue;
 }
+.main-content .posts .post .detail {
+    width: 100%;
+    height: 20px;
+    background-color: white;
+}
+.main-content .posts .post .detail .share {
+    width: 30px;
+    height: 20px;
+    float: left;
+}
 
-.main-content .posts .post .detail .detail-like {
+.main-content .posts .post .detail .share .icon {
+    margin-left: 7.5px;
+    margin-top: 2.5px;
+    height: 15px;
+}
+
+.main-content .posts .post .detail .comment {
+    width: 60px;
+    height: 20px;
+    float: left;
+}
+
+.main-content .posts .post .detail .comment .ctext {
+    margin-top: 3px;
+    text-align: right;
+    font-size: 12px;
+    color: grey;
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+.main-content .posts .post .detail .comment .cicon {
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+.main-content .posts .post .detail .comment .cicon .icon {
+    margin-left: 2.5px;
+    margin-top: 2.5px;
+    height: 15px;
+}
+
+.main-content .posts .post .detail .like {
+    width: 80px;
+    height: 100%;
     float: right;
 }
+
+.main-content .posts .post .detail .like .ltext {
+    margin-top: 3px;
+    text-align: right;
+    font-size: 12px;
+    color: grey;
+    width: 50px;
+    height: 20px;
+    float: left;
+}
+
+.main-content .posts .post .detail .like .licon {
+    width: 30px;
+    height: 20px;
+    float: left;
+}
+
+.main-content .posts .post .detail .like .licon .icon {
+    margin-left: 7.5px;
+    margin-top: 2.5px;
+    height: 15px;
+
 
 /* profile page */
 .main-content .name-pad {
