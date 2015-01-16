@@ -17,10 +17,6 @@
  * under the License.
  */
 body {
-<<<<<<< HEAD
-    background: white;
-=======
->>>>>>> 8807fe0c15d7aa685db92421ec1ff9b5172fa045
     margin: 0px;
 }
 /* header */
@@ -101,10 +97,7 @@ body {
     text-align: center;
     border-top: 1px solid #000000;
 }
-<<<<<<< HEAD
-=======
 /* bootom bar selected item */
->>>>>>> 8807fe0c15d7aa685db92421ec1ff9b5172fa045
 .footer .footer-button.selected {
     background: #bababa;
 }
@@ -125,17 +118,9 @@ body {
     width: 100%;
 }
 
-<<<<<<< HEAD
-.main-content .content-choose {
-    height: 35px;
-    background: white;
-    line-height: 35px;
-    width: 100%;
-=======
 /* home page category selected tab */
 .main-content .content-choose .selected {
     background: #bababa;
->>>>>>> 8807fe0c15d7aa685db92421ec1ff9b5172fa045
 }
 
 .main-content .content-choose #jingxuan {
