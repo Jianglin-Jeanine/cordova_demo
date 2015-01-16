@@ -20,6 +20,9 @@
 <html>
     <head>
         <link href="css/index.css" media="all" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery.resizeimagetoparent.min.js"></script>
+        <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
@@ -29,18 +32,26 @@
     </head>
     <body>
         <div class="header">
-            <center>Add</center>
+            <div class="header-title" id="common-title">Add</div>
         </div>
-        <div class="main-content">
-            <div class="add-button" id="add-dapei">创建搭配</div>
-            <div class="add-button" id="add-guandian">发布观点</div>
+        <div class="main-content" id="add">
+            <div class="add-button" id="add-dapei"><img src="img/pages/add/dapei.png"></div>
+            <div class="add-button" id="add-guandian"><img src="img/pages/add/guandian.png"></div>
         </div>
         <div class="footer">
-            <div class="footer-button"><a href="home.html"><img src="img/bottom_bar/bottomBarHome.png"></a></div>
-            <div class="footer-button"><a href="explore.html"><img src="img/bottom_bar/bottomBarExplore.png"></a></div>
-            <div class="footer-button selected"><a href="add.html"><img src="img/bottom_bar/bottomBarAdd.png"></a></div>
-            <div class="footer-button"><a href="profile.html"><img src="img/bottom_bar/bottomBarProfile.png"></a></div>
-            <div class="footer-button"><a href="shop.html"><img src="img/bottom_bar/bottomBarShop.png"></a></div>
+            <a href="home.html"><div class="footer-button"><img src="img/bottom_bar/bottomBarHome.png"></div></a>
+            <a href="explore.html"><div class="footer-button"><img src="img/bottom_bar/bottomBarExplore.png"></div></a>
+            <a href="add.html"><div class="footer-button selected"><img src="img/bottom_bar/bottomBarAdd.png"></div></a>
+            <a href="profile.html"><div class="footer-button"><img src="img/bottom_bar/bottomBarProfile.png"></div></a>
+            <a href="shop.html"><div class="footer-button"><img src="img/bottom_bar/bottomBarShop.png"></div></a>
         </div>
+        <script type="text/javascript">
+            $(".main-content#add").height(($(window).height() - 64 - 49).toString() + 'px');
+            var totalHeight = $(".main-content#add").height();
+            var singleHeight = (totalHeight - 340) / 2
+            $(".add-button").height(singleHeight.toString() + 'px');
+            $(".add-button").width(singleHeight.toString() + 'px');
+            $(".add-button img").height(singleHeight.toString() + 'px');
+        </script>
     </body>
 </html>
