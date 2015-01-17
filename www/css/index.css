@@ -268,6 +268,10 @@ body {
     height: 15px;
 }
 
+.main-content .share-pannel {
+    background: #bababa;
+}
+
 /* add page */
 .main-content#add {
     background: url("../img/pages/add/bg.png")

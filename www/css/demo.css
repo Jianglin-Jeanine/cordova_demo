@@ -1,0 +1,113 @@
+body {
+    margin: 0px;
+}
+
+
+/* header */
+.header {
+    background: white;
+    height: 64px;
+    padding-top: 20px;
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid #000000;
+}
+.header .header-title {
+    line-height: 44px;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.header .header-title#common-title {
+    font-size: 23px;
+}
+.header .header-title form {
+    width: 200px;
+}
+.header .header-title input {
+    height: 30px;
+    line-height: 28px;
+    padding: 0;
+    border: 1px solid #000000;
+    padding-left: 8px;
+    border-radius: 15px;
+    width: 160px;
+    margin-right: 10px;
+}
+.header .header-title input:focus {
+    outline: none;
+}
+.header .header-left {
+    line-height: 44px;
+    width: 44px;
+    position: absolute;
+    left: 20px;
+    bottom: 0px;
+    text-align: center;
+}
+.header .header-left .icon {
+    height: 20px;
+}
+.header .header-right {
+    line-height: 44px;
+    width: 44px;
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    text-align: center;
+}
+
+
+/* footer */
+.footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: white;
+    padding: 0;
+    height: 49px;
+}
+.footer .footer-button {
+    display: block;
+    width: 20%;
+    margin: 0;
+    float: left;
+    height: 100%;
+    line-height: 49px;
+    text-align: center;
+    border-top: 1px solid #000000;
+}
+/* bootom bar selected item */
+.footer .footer-button.selected {
+    background: #bababa;
+}
+.footer .footer-button img{
+    height: 100%;
+}
+
+
+.main-content {
+    padding-top: 64px;
+    padding-bottom: 49px;
+}
+
+
+/* 1C */
+.main-content#add {
+    background: url("../img/pages/add/bg.png")
+}
+.main-content .add-button {
+    height: 140px;
+    width: 140px;
+    text-align: center;
+    margin: 0 auto;
+}
+.main-content .add-button#add-dapei {
+    margin-top: 150px;
+}
+.main-content .add-button#add-guandian {
+    margin-top: 40px;
+}
+.main-content .add-button img {
+    height: 140px;
+}
