@@ -293,6 +293,35 @@ body {
     height: 140px;
 }
 
+
+/* shop page */
+.main-content .search-bar {
+    background-color: lightpink;
+    height: 40px;
+    text-align: middle;
+}
+
+.main-content .tag-bar {
+    background-color: skyblue;
+    height: 30px;
+}
+
+.main-content .shop-topics {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.main-content .shop-topics .shop-topic {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+}
+
+.main-content .shop-topics .shop-topic .topic-img {
+    width: 100%;
+}
+
+
 /* profile page */
 .main-content .name-pad {
 
