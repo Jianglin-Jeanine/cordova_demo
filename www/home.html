@@ -20,9 +20,11 @@
 <html>
     <head>
         <link href="css/index.css" media="all" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
         <script type="text/javascript" src="js/jquery.resizeimagetoparent.min.js"></script>
-        <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
@@ -90,11 +92,27 @@
                         </div>
                     </div>
                     <div class="detail">
-                        <span><a href="">分享</a></span>
-                        <span><a href="">评论</a></span>
+                        <div class="detail-button" id="share"><a href="">分享</a></div class="detail-button">
+                        <div class="detail-button" id="comment"><a href="">评论</a></div class="detail-button">
                         <div class="detail-like">Like 355</div>
                     </div>
                 </div>
+            </div>
+            <div class="share-mask-bg"></div>
+            <div class="share-pannel">
+                <div class="share-options">
+                    <div class="row">
+                        <div class="col-xs-4 share-option">微信</div>
+                        <div class="col-xs-4 share-option">朋友圈</div>
+                        <div class="col-xs-4 share-option">微博</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 share-option">人人</div>
+                        <div class="col-xs-4 share-option">Facebook</div>
+                        <div class="col-xs-4 share-option">邮箱</div>
+                    </div>
+                </div>
+                <div class="cancle-button">Cancle</div>
             </div>
         </div>
         <div class="footer">
