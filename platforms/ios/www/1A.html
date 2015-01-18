@@ -252,11 +252,17 @@
                     $(".share-pannel").hide();
                     $(".share-mask-bg").hide();
                     $("body").css("overflow", "scroll");
+                    document.body.removeEventListener('touchmove', function(event) {
+                        event.preventDefault();
+                    }, false);
                 });
                 $(".share-mask-bg").click(function() {
                     $(".share-pannel").hide();
                     $(".share-mask-bg").hide();
                     $("body").css("overflow", "scroll");
+                    document.body.removeEventListener('touchmove', function(event) {
+                        event.preventDefault();
+                    }, false);
                 });
             });
         </script>
