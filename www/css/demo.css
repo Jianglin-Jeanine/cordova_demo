@@ -200,7 +200,7 @@ body {
     position: fixed;
     top: 64px;
     left: 0px;
-    background: url("../img/pages/add/bg.png");
+    background: url("../img/1C/bg.png");
     z-index: 4;
 }
 .share-pannel {
@@ -245,7 +245,7 @@ body {
 
 /* 1C */
 .main-content#add {
-    background: url("../img/pages/add/bg.png");
+    background: url("../img/1C/bg.png");
 }
 .main-content .add-button {
     height: 140px;
@@ -345,4 +345,47 @@ body {
     border-bottom: 1px solid #000000;
     height: 30px;
     line-height: 30px;
+}
+
+/* 2CA */
+.guandian .action-buttons {
+    width: 100%;
+    clear: both;
+    margin: 0;
+}
+.guandian .action-buttons .action-button {
+    width: 50%;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #000000;
+}
+.guandian .action-buttons .action-button#cancel {
+    float: left;
+    border-right: 1px solid #000000;
+}
+.guandian .action-buttons .action-button#send {
+    float: right;
+}
+.guandian .input-form {
+    clear: both;
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+.guandian .input-area {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    resize: none;
+    width: 98%;
+    height: 200px;
+}
+.guandian .input-area {
+    outline: none;
+}
+.tool-bar {
+
+}
+.tool-bar .tool-item {
+    text-align: center;
 }
