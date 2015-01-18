@@ -7,7 +7,7 @@
     <author email="harrychen-cjz@hotmail.com">
         Jeanine Dev
     </author>
-    <content src="home.html" />
+    <content src="1A.html" />
     <preference name="webviewbounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <access origin="*" />
