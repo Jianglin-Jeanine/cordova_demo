@@ -22,7 +22,7 @@ body {
 /* header */
 .header {
     background: white;
-    height: 44px;
+    height: 64px;
     padding-top: 20px;
     width: 100%;
     position: fixed;
@@ -182,11 +182,24 @@ body {
 .main-content .posts .post .post-content .post-tag {
     color: blue;
 }
+
 .main-content .posts .post .detail {
     width: 100%;
     height: 20px;
     background-color: white;
 }
+
+.main-content .posts .post .detail .detail-button {
+    float: left;
+}
+.main-content .posts .post .detail .detail-like {
+    float: right;
+}
+
+.main-content .posts .post .detail:after {
+    clear: both;
+}
+
 .main-content .posts .post .detail .share {
     width: 30px;
     height: 20px;
@@ -253,6 +266,10 @@ body {
     margin-left: 7.5px;
     margin-top: 2.5px;
     height: 15px;
+}
+
+.main-content .share-pannel {
+    background: #bababa;
 }
 
 /* add page */
