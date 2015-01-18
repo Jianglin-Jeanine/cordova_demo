@@ -251,9 +251,9 @@
                     $(".share-mask-bg").width($(window).width().toString() + 'px');
                     $(".share-mask-bg").fadeIn(500);
                     $("body").css("overflow", "hidden");
-                    document.body.addEventListener('touchmove', function(event) {
+                    $("body").bind("touchmove", function(event) {
                         event.preventDefault();
-                    }, false);
+                    });
                 });
                 $(".cancel-button").click(function() {
                     $(".share-pannel").animate({
@@ -261,9 +261,7 @@
                     }, 500);
                     $(".share-mask-bg").fadeOut(500);
                     $("body").css("overflow", "scroll");
-                    document.body.removeEventListener('touchmove', function(event) {
-                        event.preventDefault();
-                    }, false);
+                    $("body").unbind("touchmove");
                 });
                 $(".share-mask-bg").click(function() {
                     $(".share-pannel").animate({
@@ -271,9 +269,7 @@
                     }, 500);
                     $(".share-mask-bg").fadeOut(500);
                     $("body").css("overflow", "scroll");
-                    document.body.removeEventListener('touchmove', function(event) {
-                        event.preventDefault();
-                    }, false);
+                    $("body").unbind("touchmove");
                 });
             });
         </script>
