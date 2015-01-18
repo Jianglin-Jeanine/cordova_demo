@@ -239,8 +239,27 @@ body {
 
 
 /* 1B */
-.main-content#explore img {
+.main-content .limited {
+
+}
+
+.main-content .limited .main-image {
     width: 100%;
+}
+
+.main-content .limited .images {
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin: 0;
+}
+
+.main-content .limited .images .image {
+    width: 33.333333333%;
+    float: left;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 /* 1C */
