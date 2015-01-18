@@ -10,7 +10,7 @@ body {
     padding-top: 20px;
     width: 100%;
     position: fixed;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #efefef;
 }
 .header .header-title {
     line-height: 44px;
@@ -19,7 +19,7 @@ body {
     text-align: center;
 }
 .header .header-title#common-title {
-    font-size: 20px;
+    font-size: 23px;
 }
 .header .header-title form {
     width: 200px;
@@ -91,167 +91,132 @@ body {
     padding-bottom: 49px;
 }
 
+
 /* 1A */
 .main-content .content-choose {
-    height: 30px;
+    height: 35px;
+    background: white;
+    line-height: 35px;
+    width: 100%;
+    border-bottom: 1px solid #efefef;
+    position: fixed;
+    top: 64px;
 }
 
+/* 1A category selected tab */
 .main-content .content-choose .selected {
     background: #bababa;
 }
-
 .main-content .content-choose #jingxuan {
     text-align: center;
     width: 50%;
-    line-height: 30px;
     float: left;
+    border-right: 1px solid #efefef;
 }
-
 .main-content .content-choose #guanzhu {
     text-align: center;
     width: 50%;
-    line-height: 30px;
     float: left;
 }
 
-
+/* 1A posts */
+.main-content .posts {
+    padding-top: 35px;
+}
+.main-content .posts .post {
+    border-top: 1px solid #000000;
+}
 .main-content .posts .post .status {
-    height: 25px;
-    line-height: 25px;
-    border-bottom: 1px solid #000000;
+    height: 30px;
+    padding-top: 5px;
 }
-
+.main-content .posts .post .status img {
+    height: 30px;
+}
 .main-content .posts .post .status .location {
-    text-align: left;
+    text-align: center;
     float: left;
+    height: 30px;
     width: 33%;
 }
-
 .main-content .posts .post .status .poster {
     text-align: center;
     float: left;
+    height: 30px;
     width: 33%;
 }
-
 .main-content .posts .post .status .time {
-    text-align: right;
+    text-align: center;
     float: left;
+    height: 30px;
     width: 33%;
 }
-
 .main-content .posts .post .post-content {
     width: 100%;
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
 .main-content .posts .post .post-content .post-img {
-    height: 200px;
-}
-
-.main-content .posts .post .post-content .post-text {
-    text-align: left;
-}
-
-.main-content .posts .post .post-content .post-tag {
-    color: blue;
-}
-
-.main-content .posts .post .detail {
     width: 100%;
+}
+.main-content .posts .post .post-content .post-tag {
     height: 20px;
+}
+.main-content .posts .post .post-content .post-tag img {
+    height: 100%;
+}
+.main-content .posts .post .post-content .post-text {
+    width: 98%;
+    margin: 0 auto;
+}
+.main-content .posts .post .post-content .post-text img {
+    width: 100%;
+}
+.main-content .posts .post .detail {
+    height: 22px;
     background-color: white;
 }
-
-.main-content .posts .post .detail .detail-button {
-    float: left;
+.main-content .posts .post .detail img {
+    height: 20px;
 }
-.main-content .posts .post .detail .detail-like {
-    float: right;
-}
-
 .main-content .posts .post .detail:after {
     clear: both;
 }
-
 .main-content .posts .post .detail .share {
-    width: 30px;
-    height: 20px;
     float: left;
+    margin-left: 5px;
 }
-
-.main-content .posts .post .detail .share .icon {
-    margin-left: 7.5px;
-    margin-top: 2.5px;
-    height: 15px;
-}
-
 .main-content .posts .post .detail .comment {
-    width: 60px;
-    height: 20px;
     float: left;
 }
-
-.main-content .posts .post .detail .comment .ctext {
-    margin-top: 3px;
-    text-align: right;
-    font-size: 12px;
-    color: gray;
-    width: 20px;
-    height: 20px;
-    float: left;
-}
-
-.main-content .posts .post .detail .comment .cicon {
-    width: 20px;
-    height: 20px;
-    float: left;
-}
-
-.main-content .posts .post .detail .comment .cicon .icon {
-    margin-left: 2.5px;
-    margin-top: 2.5px;
-    height: 15px;
-}
-
 .main-content .posts .post .detail .like {
-    width: 80px;
-    height: 100%;
     float: right;
+    margin-right: 5px;
 }
-
-.main-content .posts .post .detail .like .ltext {
-    margin-top: 3px;
-    text-align: right;
-    font-size: 12px;
-    color: gray;
-    width: 50px;
-    height: 20px;
-    float: left;
+.share-mask-bg {
+    position: fixed;
+    top: 64px;
+    left: 0px;
+    background: url("../img/pages/add/bg.png");
+    z-index: 4;
 }
-
-.main-content .posts .post .detail .like .licon {
-    width: 30px;
-    height: 20px;
-    float: left;
-}
-
-.main-content .posts .post .detail .like .licon .icon {
-    margin-left: 7.5px;
-    margin-top: 2.5px;
-    height: 15px;
-}
-
-.main-content .share-pannel {
-    background: #bababa;
+.share-pannel {
+    background-color: white;
+    position: fixed;
+    bottom: 49px;
+    z-index: 5;
 }
 
 
+/* 1B */
+.main-content#explore img {
+    width: 100%;
+}
 
 /* 1C */
 .main-content#add {
-    background: url("../img/pages/add/bg.png")
+    background: url("../img/pages/add/bg.png");
 }
 .main-content .add-button {
     height: 140px;
@@ -268,7 +233,6 @@ body {
 .main-content .add-button img {
     height: 140px;
 }
-
 
 /* 1D */
 .main-content .tag-bar {
@@ -346,8 +310,3 @@ body {
     height: 30px;
     line-height: 30px;
 }
-
-
-
-
-

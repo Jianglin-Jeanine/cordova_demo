@@ -47,94 +47,147 @@
                 <div class="selected" id="jingxuan">精选</div>
                 <div id="guanzhu">我的关注</div>
             </div>
-            <script type="text/javascript">
-                $(document).ready(function() {
-                    $("#guanzhu-posts").hide();
-                    $("#search-title").hide();
-                    $("#jingxuan").click(function() {
-                        $("#jingxuan-posts").show();
-                        $("#jingxuan").addClass("selected");
-                        $("#guanzhu-posts").hide();
-                        $("#guanzhu").removeClass("selected");
-                    });
-                    $("#guanzhu").click(function() {
-                        $("#jingxuan-posts").hide();
-                        $("#jingxuan").removeClass("selected");
-                        $("#guanzhu-posts").show();
-                        $("#guanzhu").addClass("selected");
-                    });
-                    $(".header-right").click(function() {
-                        $("#common-title").hide();
-                        $(".header-right").hide();
-                        $("#search-title").show();
-                        $("#header-search-input").focus();
-                    });
-                    $("#header-search-input").focusout(function() {
-                        $("#common-title").show();
-                        $(".header-right").show();
-                        $("#search-title").hide();
-                    });
-                });
-            </script>
             <!-- 精选的posts -->
             <div class="posts" id="jingxuan-posts">  
                 <div class="post">
                     <div class="status">
-                        <div class="location">Shanghai</div>
-                        <div class="poster"><span class="poster-avatar"></span>Charles</div>
-                        <div class="time">12m</div>
+                        <div class="location"><img src="img/1A/location1.png"></div>
+                        <div class="poster"><img src="img/1A/poster1.png"></div>
+                        <div class="time"><img src="img/1A/time1.png"></div>
                     </div>
                     <div class="post-content">
-                        <img class="post-img" src="img/goods/IMG_1064.JPG">
+                        <img class="post-img" src="img/1A/post1.png">
+                        <div class="post-tag">
+                            <img src="img/1A/tag1.png">
+                        </div>
                         <div class="post-text">
-                            买买买买<span class="post-tag">#搭配</span><span class="post-tag">#萌</span><span class="post-tag">#棒</span>
+                            <img src="img/1A/text1.png">
                         </div>
                     </div>
                     <div class="detail">
-                        <div class="share"><a href="">
-                            <img class="icon" src="img/post_buttons/share.png">
-                        </a></div>
-                        <div class="comment"><a href="">
-                            <div class="ctext">20</div>
-                            <div class="cicon"><img class="icon" src="img/post_buttons/comments.png"></div>
-                        </a></div>
-                        <div class="like">
-                            <div class="ltext">326</div>
-                            <div class="licon"><img class="icon" src="img/post_buttons/like.png"></div>
-                        </div>
+                        <div class="share"><img src="img/1A/share.png"></div>
+                        <div class="comment"><img src="img/1A/comment.png"></div>
+                        <div class="like"><img src="img/1A/like.png"></div>
                     </div>
                 </div>
-
+                <div class="post">
+                    <div class="status">
+                        <div class="location"><img src="img/1A/location1.png"></div>
+                        <div class="poster"><img src="img/1A/poster1.png"></div>
+                        <div class="time"><img src="img/1A/time1.png"></div>
+                    </div>
+                    <div class="post-content">
+                        <img class="post-img" src="img/1A/post1.png">
+                        <div class="post-tag">
+                            <img src="img/1A/tag1.png">
+                        </div>
+                        <div class="post-text">
+                            <img src="img/1A/text1.png">
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="share"><img src="img/1A/share.png"></div>
+                        <div class="comment"><img src="img/1A/comment.png"></div>
+                        <div class="like"><img src="img/1A/like.png"></div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="status">
+                        <div class="location"><img src="img/1A/location1.png"></div>
+                        <div class="poster"><img src="img/1A/poster1.png"></div>
+                        <div class="time"><img src="img/1A/time1.png"></div>
+                    </div>
+                    <div class="post-content">
+                        <img class="post-img" src="img/1A/post1.png">
+                        <div class="post-tag">
+                            <img src="img/1A/tag1.png">
+                        </div>
+                        <div class="post-text">
+                            <img src="img/1A/text1.png">
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="share"><img src="img/1A/share.png"></div>
+                        <div class="comment"><img src="img/1A/comment.png"></div>
+                        <div class="like"><img src="img/1A/like.png"></div>
+                    </div>
+                </div>
             </div>
             <!-- 关注的posts -->
             <div class="posts" id="guanzhu-posts">
                 <div class="post">
                     <div class="status">
-                        <div class="location">Shanghai</div>
-                        <div class="poster"><span class="poster-avatar"></span>Charles</div>
-                        <div class="time">12m</div>
+                        <div class="location"><img src="img/1A/location1.png"></div>
+                        <div class="poster"><img src="img/1A/poster2.png"></div>
+                        <div class="time"><img src="img/1A/time1.png"></div>
                     </div>
                     <div class="post-content">
-                        <img class="post-img" src="img/goods/IMG_1064.JPG">
+                        <img class="post-img" src="img/1A/post2.png">
+                        <div class="post-tag">
+                            <img src="img/1A/tag2.png">
+                        </div>
                         <div class="post-text">
-                            买买买买<span class="post-tag">#搭配</span><span class="post-tag">#萌</span><span class="post-tag">#棒</span>
+                            <img src="img/1A/text2.png">
                         </div>
                     </div>
                     <div class="detail">
-                        <div class="detail-button" id="share"><a href="">分享</a></div class="detail-button">
-                        <div class="detail-button" id="comment"><a href="">评论</a></div class="detail-button">
-                        <div class="detail-like">Like 355</div>
+                        <div class="share"><img src="img/1A/share.png"></div>
+                        <div class="comment"><img src="img/1A/comment.png"></div>
+                        <div class="like"><img src="img/1A/like.png"></div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="status">
+                        <div class="location"><img src="img/1A/location1.png"></div>
+                        <div class="poster"><img src="img/1A/poster2.png"></div>
+                        <div class="time"><img src="img/1A/time1.png"></div>
+                    </div>
+                    <div class="post-content">
+                        <img class="post-img" src="img/1A/post2.png">
+                        <div class="post-tag">
+                            <img src="img/1A/tag2.png">
+                        </div>
+                        <div class="post-text">
+                            <img src="img/1A/text2.png">
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="share"><img src="img/1A/share.png"></div>
+                        <div class="comment"><img src="img/1A/comment.png"></div>
+                        <div class="like"><img src="img/1A/like.png"></div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="status">
+                        <div class="location"><img src="img/1A/location1.png"></div>
+                        <div class="poster"><img src="img/1A/poster2.png"></div>
+                        <div class="time"><img src="img/1A/time1.png"></div>
+                    </div>
+                    <div class="post-content">
+                        <img class="post-img" src="img/1A/post2.png">
+                        <div class="post-tag">
+                            <img src="img/1A/tag2.png">
+                        </div>
+                        <div class="post-text">
+                            <img src="img/1A/text2.png">
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="share"><img src="img/1A/share.png"></div>
+                        <div class="comment"><img src="img/1A/comment.png"></div>
+                        <div class="like"><img src="img/1A/like.png"></div>
                     </div>
                 </div>
             </div>
+            <div class="share-mask-bg"></div>
             <div class="share-pannel">
                 <div class="share-options">
-                    <div class="row">
+                    <div class="row col-xs-12">
                         <div class="col-xs-4 share-option">微信</div>
                         <div class="col-xs-4 share-option">朋友圈</div>
                         <div class="col-xs-4 share-option">微博</div>
                     </div>
-                    <div class="row">
+                    <div class="row col-xs-12">
                         <div class="col-xs-4 share-option">人人</div>
                         <div class="col-xs-4 share-option">Facebook</div>
                         <div class="col-xs-4 share-option">邮箱</div>
@@ -150,6 +203,63 @@
             <a href="1D.html"><div class="footer-button"><img src="img/bottom_bar/bottomBarShop.png"></div></a>
             <a href="1E.html"><div class="footer-button"><img src="img/bottom_bar/bottomBarProfile.png"></div></a>
         </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#guanzhu-posts").hide();
+                $("#search-title").hide();
+                $(".share-pannel").hide();
+                $(".share-mask-bg").hide();
+                $("#jingxuan").click(function() {
+                    $("#jingxuan-posts").show();
+                    $("#jingxuan").addClass("selected");
+                    $("#guanzhu-posts").hide();
+                    $("#guanzhu").removeClass("selected");
+                });
+                $("#guanzhu").click(function() {
+                    $("#jingxuan-posts").hide();
+                    $("#jingxuan").removeClass("selected");
+                    $("#guanzhu-posts").show();
+                    $("#guanzhu").addClass("selected");
+                });
+                // $(".header-right").click(function() {
+                //     $("#common-title").hide();
+                //     $(".header-right").hide();
+                //     $("#search-title").show();
+                //     $("#header-search-input").focus();
+                // });
+                // $("#header-search-input").focus(function() {
+                //     window.scrollTo(0, 0);
+                //     document.body.scrollTop = 0;
+                //     $("body").css("overflow", "hidden");
+                // });
+                // $("#header-search-input").focusout(function() {
+                //     $("#common-title").show();
+                //     $(".header-right").show();
+                //     $("#search-title").hide();
+                //     $("body").css("overflow", "scroll");
+                // });
+                $(".share").click(function() {
+                    $(".share-pannel").show();
+                    $(".share-mask-bg").height(($(window).height() - 64 - 49).toString() + 'px');
+                    $(".share-mask-bg").width($(window).width().toString() + 'px');
+                    $(".share-mask-bg").show();
+                    $("body").css("overflow", "hidden");
+                    document.body.addEventListener('touchmove', function(event) {
+                        event.preventDefault();
+                    }, false);
+                });
+                $(".cancle-button").click(function() {
+                    $(".share-pannel").hide();
+                    $(".share-mask-bg").hide();
+                    $("body").css("overflow", "scroll");
+                });
+                $(".share-mask-bg").click(function() {
+                    $(".share-pannel").hide();
+                    $(".share-mask-bg").hide();
+                    $("body").css("overflow", "scroll");
+                });
+            });
+        </script>
     </body>
 </html>
 
