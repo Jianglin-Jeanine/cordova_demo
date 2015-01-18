@@ -42,13 +42,13 @@
         </div>
         <div class="main-content">
             <div class="tag-bar">
-                <div class="tag"><img style="height:30px;width:100%;" src="img/shop_topics/tab.png"></div>
-                <div class="tag" style="margin-left:-14%">BEST</div>
-                <div class="tag">ALL</div>
-                <div class="tag">SALE</div>
-                <div class="tag">SHIRT</div>
-                <div class="tag">BAG</div>
-                <div class="tag">SHOE</div>
+                <!-- <div class="tag"><img style="height:30px;width:100%;" src="img/shop_topics/tab.png"></div> -->
+                <div id="a" class="tag selected">BEST</div>
+                <div id="b" class="tag">ALL</div>
+                <div id="c" class="tag">SALE</div>
+                <div id="d" class="tag">SHIRT</div>
+                <div id="e" class="tag">BAG</div>
+                <div id="f" class="tag">SHOE</div>
                 <div class="tag" style="width:16%;">...</div>
             </div>
             <div class="shop-topics">
@@ -69,6 +69,40 @@
             <a href="1D.html"><div class="footer-button selected"><img src="img/bottom_bar/bottomBarShop.png"></div></a>
             <a href="1E.html"><div class="footer-button"><img src="img/bottom_bar/bottomBarProfile.png"></div></a>
         </div>
+        <script type="text/javascript">
+            function remove() {
+                $("#a").removeClass("selected");
+                $("#b").removeClass("selected");
+                $("#c").removeClass("selected");
+                $("#d").removeClass("selected");
+                $("#e").removeClass("selected");
+                $("#f").removeClass("selected");
+            }
+            $("#a").click(function() {
+                remove();
+                $("#a").addClass("selected");
+            });
+            $("#b").click(function() {
+                remove();
+                $("#b").addClass("selected");
+            });
+            $("#c").click(function() {
+                remove();
+                $("#c").addClass("selected");
+            });
+            $("#d").click(function() {
+                remove();
+                $("#d").addClass("selected");
+            });
+            $("#e").click(function() {
+                remove();
+                $("#e").addClass("selected");
+            });
+            $("#f").click(function() {
+                remove();
+                $("#f").addClass("selected");
+            });
+        </script>
     </body>
 </html>
 
