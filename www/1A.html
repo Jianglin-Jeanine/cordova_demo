@@ -186,17 +186,19 @@
             <div class="share-pannel">
                 <div class="share-options">
                     <div class="row col-xs-12">
-                        <div class="col-xs-4 share-option">微信</div>
-                        <div class="col-xs-4 share-option">朋友圈</div>
-                        <div class="col-xs-4 share-option">微博</div>
+                        <div class="col-xs-4 share-option"><img src="img/1A/wechat.png"></div>
+                        <div class="col-xs-4 share-option"><img src="img/1A/weibo.png"></div>
+                        <div class="col-xs-4 share-option"><img src="img/1A/qq.png"></div>
                     </div>
                     <div class="row col-xs-12">
-                        <div class="col-xs-4 share-option">人人</div>
-                        <div class="col-xs-4 share-option">Facebook</div>
-                        <div class="col-xs-4 share-option">邮箱</div>
+                        <div class="col-xs-4 share-option"><img src="img/1A/facebook.png"></div>
+                        <div class="col-xs-4 share-option"><img src="img/1A/ins.png"></div>
+                        <div class="col-xs-4 share-option"><img src="img/1A/pin.png"></div>
                     </div>
                 </div>
-                <div class="cancel-button">CANCEL</div>
+                <div class="row col-xs-12">
+                    <div class="cancel-button">CANCEL</div>
+                </div>
             </div>
         </div>
         <div class="footer">
@@ -208,9 +210,9 @@
         </div>
         <script type="text/javascript">
             $(document).ready(function() {
+                $(".share-pannel").css("bottom", (49 - $(".share-pannel").height()).toString() + 'px')
                 $("#guanzhu-posts").hide();
                 $("#search-title").hide();
-                $(".share-pannel").hide();
                 $(".share-mask-bg").hide();
                 $("#jingxuan").click(function() {
                     $("#jingxuan-posts").show();
@@ -242,30 +244,32 @@
                 //     $("body").css("overflow", "scroll");
                 // });
                 $(".share").click(function() {
-                    $(".share-pannel").show();
+                    $(".share-pannel").animate({
+                        bottom: "+=" + $(".share-pannel").height().toString(),
+                    }, 500);
                     $(".share-mask-bg").height(($(window).height() - 64 - 49).toString() + 'px');
                     $(".share-mask-bg").width($(window).width().toString() + 'px');
-                    $(".share-mask-bg").show();
+                    $(".share-mask-bg").fadeIn(500);
                     $("body").css("overflow", "hidden");
-                    document.body.addEventListener('touchmove', function(event) {
+                    $("body").bind("touchmove", function(event) {
                         event.preventDefault();
-                    }, false);
+                    });
                 });
                 $(".cancel-button").click(function() {
-                    $(".share-pannel").hide();
-                    $(".share-mask-bg").hide();
+                    $(".share-pannel").animate({
+                        bottom: "-=" + $(".share-pannel").height().toString(),
+                    }, 500);
+                    $(".share-mask-bg").fadeOut(500);
                     $("body").css("overflow", "scroll");
-                    document.body.removeEventListener('touchmove', function(event) {
-                        event.preventDefault();
-                    }, false);
+                    $("body").unbind("touchmove");
                 });
                 $(".share-mask-bg").click(function() {
-                    $(".share-pannel").hide();
-                    $(".share-mask-bg").hide();
+                    $(".share-pannel").animate({
+                        bottom: "-=" + $(".share-pannel").height().toString(),
+                    }, 500);
+                    $(".share-mask-bg").fadeOut(500);
                     $("body").css("overflow", "scroll");
-                    document.body.removeEventListener('touchmove', function(event) {
-                        event.preventDefault();
-                    }, false);
+                    $("body").unbind("touchmove");
                 });
             });
         </script>
