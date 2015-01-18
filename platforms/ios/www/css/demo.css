@@ -206,6 +206,14 @@ body {
     position: fixed;
     bottom: 49px;
     z-index: 5;
+    width: 100%;
+}
+.share-pannel .share-options {
+    width: 100%;
+}
+.share-pannel .cancel-button {
+    width: 100%;
+    text-align: center;
 }
 
 
