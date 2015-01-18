@@ -233,3 +233,80 @@ body {
 .main-content .add-button img {
     height: 140px;
 }
+
+/* 1D */
+.main-content .tag-bar {
+    height: 30px;
+}
+
+.main-content .tag-bar .tag {
+    display: block;
+    width: 14%;
+    margin: 0;
+    float: left;
+    height: 100%;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.main-content .shop-topics .shop-topic .topic-img {
+    width: 100%;
+}
+
+/* 1E */
+.main-content .name-pad {
+
+}
+
+.main-content .short-detail {
+
+}
+
+.main-content .short-detail .avatar {
+    height: 50px;
+    width: 50px;
+    float: left;
+    background: white;
+}
+
+.main-content .short-detail .detail-info {
+    height: 50px;
+    background: green;
+}
+.main-content .short-detail .detail-info .info-item {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: bottom;
+}
+
+.main-content .dashboard {
+
+}
+
+.main-content .dashboard .group1 {
+    margin-top: 10px;
+    border-top: 1px solid #000000;
+}
+.main-content .dashboard .group2 {
+    margin-top: 10px;
+    border-top: 1px solid #000000;
+}
+.main-content .dashboard .group3 {
+    margin-top: 10px;
+    border-top: 1px solid #000000;
+}
+.main-content .dashboard .group4 {
+    margin-top: 10px;
+    border-top: 1px solid #000000;
+    margin-bottom: 20px;
+}
+
+.main-content .dashboard .dashboard-item {
+    background: #ebebeb;
+    border-bottom: 1px solid #000000;
+    height: 30px;
+    line-height: 30px;
+}
