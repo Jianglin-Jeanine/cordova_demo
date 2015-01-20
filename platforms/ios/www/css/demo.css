@@ -367,6 +367,9 @@ body {
 }
 
 /* 2CA */
+.guandian {
+    padding-top: 20px;
+}
 .guandian .action-buttons {
     width: 100%;
     clear: both;
