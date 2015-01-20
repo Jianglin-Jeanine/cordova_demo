@@ -367,9 +367,44 @@ body {
 }
 
 /* 2CA */
-.keyboard {
+.guandian .action-buttons {
     width: 100%;
+    clear: both;
+    margin: 0;
 }
-.keyboard img {
+.guandian .action-buttons .action-button {
+    width: 50%;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #000000;
+}
+.guandian .action-buttons .action-button#cancel {
+    float: left;
+    border-right: 1px solid #000000;
+}
+.guandian .action-buttons .action-button#send {
+    float: right;
+}
+.guandian .input-form {
+    clear: both;
+    padding-top: 10px;
     width: 100%;
+    text-align: center;
+}
+.guandian .input-area {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    resize: none;
+    width: 98%;
+    height: 200px;
+}
+.guandian .input-area {
+    outline: none;
+}
+.tool-bar {
+
+}
+.tool-bar .tool-item {
+    text-align: center;
 }
