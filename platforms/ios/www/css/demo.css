@@ -403,8 +403,13 @@ body {
     outline: none;
 }
 .tool-bar {
-
+    border-bottom: 1px solid #000000;
+    margin: 0;
 }
 .tool-bar .tool-item {
     text-align: center;
+    height: 25px;
+}
+.tool-bar .tool-item img {
+    height: 100%;
 }
