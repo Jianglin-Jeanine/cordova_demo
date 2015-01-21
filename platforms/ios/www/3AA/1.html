@@ -72,6 +72,8 @@
             <div class="image"><img style="width:100%;" src="../img/limited/1/3a.png"></div>
             <div class="image"><img style="width:100%;" src="../img/limited/1/4a.png"></div>
         </div>
+        <div class="buy">买买买</div>
+        <div class="buy-mask-bg"></div>
         <div class="buy-pannel">
             <table class="table table-hover">
                 <tr>
@@ -113,6 +115,36 @@
         <script type="text/javascript">
             $(document).ready(function() {
                 $(".buy-pannel").css("bottom", (0 - $(".buy-pannel").height()).toString() + 'px');
+                $(".buy").click(function() {
+                    $(".buy-pannel").animate({
+                        bottom: "+=" + $(".buy-pannel").height().toString(),
+                    }, 200);
+                    $(".buy-mask-bg").height(($(window).height() - 64).toString() + 'px');
+                    $(".buy-mask-bg").width($(window).width().toString() + 'px');
+                    $(".buy-mask-bg").fadeIn(200);
+                    $("body").css("overflow", "hidden");
+                    $("body").bind("touchmove", function(event) {
+                        event.preventDefault();
+                    });
+                });
+                // $(".cancel-button").click(function() {
+                //     $(".buy-pannel").animate({
+                //         bottom: "-=" + $(".buy-pannel").height().toString(),
+                //     }, 200);
+                //     $(".buy-mask-bg").fadeOut(200);
+                //     $("body").css("overflow", "scroll");
+                //     $("body").unbind("touchmove");
+                // });
+                $(".buy-mask-bg").click(function() {
+                    $(".buy-pannel").animate({
+                        bottom: "-=" + $(".buy-pannel").height().toString(),
+                    }, 200);
+                    $(".buy-mask-bg").fadeOut(200);
+                    $("body").css("overflow", "scroll");
+                    $("body").unbind("touchmove");
+                });
+            });
+
         </script>
 
     </body>

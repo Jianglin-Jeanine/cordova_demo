@@ -18,12 +18,28 @@
     text-align: center;
 }
 
-.left {
+/* buy pennel setting 8*/
+.buy-mask-bg {
+    position: fixed;
+    top: 64px;
+    left: 0px;
+    background: url("../img/1C/bg.png");
+    z-index: 16;
+}
+
+.buy-pannel {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 17;
+}
+
+.buy-pannel .left {
     padding: 8px;
     padding-left: 20px !important;
     width: 50%;
 }
-.right {
+.buy-pannel .right {
     padding-right: 20px !important;
     text-align: right;
 }
@@ -31,3 +47,5 @@
 table {
     margin:0px !important;
 }
+
+
