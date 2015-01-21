@@ -118,10 +118,10 @@
                 $(".buy").click(function() {
                     $(".buy-pannel").animate({
                         bottom: "+=" + $(".buy-pannel").height().toString(),
-                    }, 200);
+                    }, 300);
                     $(".buy-mask-bg").height(($(window).height() - 64).toString() + 'px');
                     $(".buy-mask-bg").width($(window).width().toString() + 'px');
-                    $(".buy-mask-bg").fadeIn(200);
+                    $(".buy-mask-bg").fadeIn(300);
                     $("body").css("overflow", "hidden");
                     $("body").bind("touchmove", function(event) {
                         event.preventDefault();
@@ -130,16 +130,16 @@
                 // $(".cancel-button").click(function() {
                 //     $(".buy-pannel").animate({
                 //         bottom: "-=" + $(".buy-pannel").height().toString(),
-                //     }, 200);
-                //     $(".buy-mask-bg").fadeOut(200);
+                //     }, 300);
+                //     $(".buy-mask-bg").fadeOut(300);
                 //     $("body").css("overflow", "scroll");
                 //     $("body").unbind("touchmove");
                 // });
                 $(".buy-mask-bg").click(function() {
                     $(".buy-pannel").animate({
                         bottom: "-=" + $(".buy-pannel").height().toString(),
-                    }, 200);
-                    $(".buy-mask-bg").fadeOut(200);
+                    }, 300);
+                    $(".buy-mask-bg").fadeOut(300);
                     $("body").css("overflow", "scroll");
                     $("body").unbind("touchmove");
                 });

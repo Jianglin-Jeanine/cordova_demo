@@ -47,7 +47,7 @@ body {
     text-align: center;
 }
 .header .header-left .icon {
-    height: 24px;
+    height: 20px;
 }
 .header .header-right {
     line-height: 44px;
@@ -56,9 +56,6 @@ body {
     right: 20px;
     bottom: 0px;
     text-align: center;
-}
-.header .header-right .icon {
-    height: 24px;
 }
 
 
@@ -204,13 +201,13 @@ body {
     top: 64px;
     left: 0px;
     background: url("../img/1C/bg.png");
-    z-index: 20;
+    z-index: 16;
 }
 .share-pannel {
     background-color: white;
     position: fixed;
     bottom: 49px;
-    z-index: 5;
+    z-index: 20;
     width: 100%;
 }
 .share-pannel .share-options {
@@ -314,53 +311,62 @@ body {
 }
 
 /* 1E */
-.main-content.profile {
-    background: url(../img/1E/bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.main-content.profile .short-detail {
-    padding-top: 10px;
+.main-content .name-pad {
+
 }
 
-.main-content.profile .short-detail .avatar {
-    height: 70px;
-    width: 70px;
-    float: left;
-}
-.main-content.profile .short-detail .avatar img {
-    width: 100%;
+.main-content .short-detail {
+
 }
 
-.main-content.profile .short-detail .detail-info {
-    padding-left: 80px;
-    padding-right: 10px;
-    height: 70px;
-}
-.main-content.profile .short-detail .detail-info .info-item {
-    float: left;
-    height: 70px;
-    line-height: 20px;
-    color: #ffffff;
-    width: 25%;
-    text-align: center;
-}
-
-.main-content.profile .dashboard {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-.main-content.profile .dashboard .dashboard-item {
+.main-content .short-detail .avatar {
     height: 50px;
-    line-height: 50px;
-    color: #ffffff;
-    text-align: center;
+    width: 50px;
+    float: left;
+    background: white;
+}
+
+.main-content .short-detail .detail-info {
+    height: 50px;
+    background: green;
+}
+.main-content .short-detail .detail-info .info-item {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: bottom;
+}
+
+.main-content .dashboard {
+
+}
+
+.main-content .dashboard .group1 {
+    margin-top: 10px;
+    border-top: 1px solid #000000;
+}
+.main-content .dashboard .group2 {
+    margin-top: 10px;
+    border-top: 1px solid #000000;
+}
+.main-content .dashboard .group3 {
+    margin-top: 10px;
+    border-top: 1px solid #000000;
+}
+.main-content .dashboard .group4 {
+    margin-top: 10px;
+    border-top: 1px solid #000000;
+    margin-bottom: 20px;
+}
+
+.main-content .dashboard .dashboard-item {
+    background: #ebebeb;
+    border-bottom: 1px solid #000000;
+    height: 30px;
+    line-height: 30px;
 }
 
 /* 2CA */
-.guandian {
-    padding-top: 20px;
-}
 .guandian .action-buttons {
     width: 100%;
     clear: both;
@@ -372,7 +378,6 @@ body {
     height: 35px;
     line-height: 35px;
     border-bottom: 1px solid #000000;
-    border-top: 1px solid #000000;
 }
 .guandian .action-buttons .action-button#cancel {
     float: left;
@@ -406,42 +411,5 @@ body {
     height: 25px;
 }
 .tool-bar .tool-item img {
-    height: 100%;
-}
-/* 2CB */
-.dapei {
-    padding-top: 20px;
-}
-.dapei .action-buttons {
-    width: 100%;
-    clear: both;
-    margin: 0;
-}
-.dapei .action-buttons .action-button {
-    width: 50%;
-    text-align: center;
-    height: 35px;
-    line-height: 35px;
-    border-bottom: 1px solid #000000;
-    border-top: 1px solid #000000;
-}
-.dapei .action-buttons .action-button#cancel {
-    float: left;
-    border-right: 1px solid #000000;
-}
-.dapei .action-buttons .action-button#send {
-    float: right;
-}
-.dapei .canvas {
-
-}
-.dapei .canvas .add-button {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-    height: 20px;
-    text-align: center;
-}
-.dapei .canvas .add-button img {
     height: 100%;
 }

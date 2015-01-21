@@ -35,9 +35,9 @@
     </head>
     <body>
         <div class="header">
+            <div class="header-left"><i class="fa fa-home icon"></i></div>
             <div class="header-title" id="common-title">布洛克皮鞋</div>
         </div>
-
         <div id="myCarousel" class="carousel slide" data-interval = "false">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -107,21 +107,16 @@
                 </tr>
             </table>
         </style>
-
-        <div>
-            
-        </div>
-
         <script type="text/javascript">
             $(document).ready(function() {
                 $(".buy-pannel").css("bottom", (0 - $(".buy-pannel").height()).toString() + 'px');
                 $(".buy").click(function() {
                     $(".buy-pannel").animate({
                         bottom: "+=" + $(".buy-pannel").height().toString(),
-                    }, 200);
+                    }, 300);
                     $(".buy-mask-bg").height(($(window).height() - 64).toString() + 'px');
                     $(".buy-mask-bg").width($(window).width().toString() + 'px');
-                    $(".buy-mask-bg").fadeIn(200);
+                    $(".buy-mask-bg").fadeIn(300);
                     $("body").css("overflow", "hidden");
                     $("body").bind("touchmove", function(event) {
                         event.preventDefault();
@@ -130,16 +125,16 @@
                 // $(".cancel-button").click(function() {
                 //     $(".buy-pannel").animate({
                 //         bottom: "-=" + $(".buy-pannel").height().toString(),
-                //     }, 200);
-                //     $(".buy-mask-bg").fadeOut(200);
+                //     }, 300);
+                //     $(".buy-mask-bg").fadeOut(300);
                 //     $("body").css("overflow", "scroll");
                 //     $("body").unbind("touchmove");
                 // });
                 $(".buy-mask-bg").click(function() {
                     $(".buy-pannel").animate({
                         bottom: "-=" + $(".buy-pannel").height().toString(),
-                    }, 200);
-                    $(".buy-mask-bg").fadeOut(200);
+                    }, 300);
+                    $(".buy-mask-bg").fadeOut(300);
                     $("body").css("overflow", "scroll");
                     $("body").unbind("touchmove");
                 });
