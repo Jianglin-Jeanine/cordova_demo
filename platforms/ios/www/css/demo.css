@@ -103,7 +103,7 @@ body {
     background: white;
     line-height: 35px;
     width: 100%;
-    border-bottom: 1px solid #efefef;
+    border-bottom: 1px solid #000000;
     position: fixed;
     top: 64px;
 }
@@ -111,6 +111,7 @@ body {
 /* 1A category selected tab */
 .main-content .content-choose .selected {
     background: #bababa;
+    height: 34px;
 }
 .main-content .content-choose #jingxuan {
     text-align: center;
@@ -129,7 +130,7 @@ body {
     padding-top: 35px;
 }
 .main-content .posts .post {
-    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
 }
 .main-content .posts .post .status {
     height: 30px;
@@ -560,7 +561,24 @@ body {
     padding-bottom: 5px;
     width: 35%;
 }
+/* 4AC */
+.main-content.comments-page {
+    width: 100%;
+    padding-bottom: 89px;
+}
+.main-content.comments-page .comments {
 
+}
+.main-content.comments-page .comments img {
+    width: 100%;
+}
+.main-content.comments-page .comment-input .input-form  {
+    width: 100%;
+}
+.main-content.comments-page .comment-input .input-form .input-field {
+    width: 100%;
+    height: 100%;
+}
 
 
 
