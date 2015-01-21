@@ -342,31 +342,69 @@ body {
     line-height: 20px;
     width: 25%;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 5px;
 }
 .main-content.profile .short-detail .detail-info .info-items {
-
+    background: url(../img/1E/detail-info-bg.png);
+    background-size: 84% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: 58% 50%;
+}
+.main-content.profile .short-detail .detail-info .info-items::after {
+    clear: both;
 }
 .main-content.profile .short-detail .detail-info .info-items .info-item {
     float: left;
-    height: 70px;
+    height: 40px;
     line-height: 20px;
-    color: #ffffff;
+    color: #000000;
     width: 25%;
     text-align: center;
 }
 
 .main-content.profile .dashboard {
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 80%;
+    margin: 0 auto;
+    clear: both;
+    margin-top: 10px;
 }
 .main-content.profile .dashboard .dashboard-item {
-    height: 50px;
-    line-height: 50px;
+    height: 38px;
+    line-height: 38px;
     color: #ffffff;
     text-align: center;
     clear: both;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.main-content.profile .dashboard .dashboard-item.left {
+    background: url(../img/1E/left.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: left 50%;
+    margin-left: 40px;
+}
+.main-content.profile .dashboard .dashboard-item.right {
+    background: url(../img/1E/right.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: right 50%;
+    margin-right: 40px;
+}
+.main-content.profile .dashboard .dashboard-item.left img {
+    float: left;
+    margin-left: -40px;
+}
+.main-content.profile .dashboard .dashboard-item.right img {
+    float: right;
+    margin-right: -40px;
+}
+.main-content.profile .dashboard .dashboard-item img {
+    height: 40px;
+    margin-top: -1px;
 }
 
 /* 2CA */
