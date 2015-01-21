@@ -330,7 +330,22 @@ body {
     height: 50px;
     background: green;
 }
+<<<<<<< HEAD
 .main-content .short-detail .detail-info .info-item {
+=======
+.main-content.profile .short-detail .detail-info .user-title {
+    height: 20px;
+    line-height: 20px;
+    width: 25%;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+.main-content.profile .short-detail .detail-info .info-items {
+
+}
+.main-content.profile .short-detail .detail-info .info-items .info-item {
+>>>>>>> 5e444b866d08c0540236ae0f8f208371b9262b9c
     float: left;
     height: 20px;
     line-height: 20px;
@@ -340,6 +355,7 @@ body {
 .main-content .dashboard {
 
 }
+<<<<<<< HEAD
 
 .main-content .dashboard .group1 {
     margin-top: 10px;
@@ -357,6 +373,14 @@ body {
     margin-top: 10px;
     border-top: 1px solid #000000;
     margin-bottom: 20px;
+=======
+.main-content.profile .dashboard .dashboard-item {
+    height: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    text-align: center;
+    clear: both;
+>>>>>>> 5e444b866d08c0540236ae0f8f208371b9262b9c
 }
 
 .main-content .dashboard .dashboard-item {

@@ -330,7 +330,19 @@ body {
     height: 50px;
     background: green;
 }
-.main-content .short-detail .detail-info .info-item {
+
+.main-content.profile .short-detail .detail-info .user-title {
+    height: 20px;
+    line-height: 20px;
+    width: 25%;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+.main-content.profile .short-detail .detail-info .info-items {
+
+}
+.main-content.profile .short-detail .detail-info .info-items .info-item {
     float: left;
     height: 20px;
     line-height: 20px;
@@ -340,23 +352,12 @@ body {
 .main-content .dashboard {
 
 }
-
-.main-content .dashboard .group1 {
-    margin-top: 10px;
-    border-top: 1px solid #000000;
-}
-.main-content .dashboard .group2 {
-    margin-top: 10px;
-    border-top: 1px solid #000000;
-}
-.main-content .dashboard .group3 {
-    margin-top: 10px;
-    border-top: 1px solid #000000;
-}
-.main-content .dashboard .group4 {
-    margin-top: 10px;
-    border-top: 1px solid #000000;
-    margin-bottom: 20px;
+.main-content.profile .dashboard .dashboard-item {
+    height: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    text-align: center;
+    clear: both;
 }
 
 .main-content .dashboard .dashboard-item {
