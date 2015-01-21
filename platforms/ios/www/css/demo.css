@@ -507,3 +507,65 @@ body {
 .dapei .canvas .add-button img {
     height: 100%;
 }
+
+/* 2BB */
+
+.main-content .tag-select {
+    border-bottom: 1px solid black;
+    height: 30px;
+    margin: 0 !important;
+    position: fixed;
+    width: 100%;
+    background: white;
+}
+
+.main-content .tag-select .tag.selected {
+    background: #bababa;
+    height: 29px;
+}
+
+
+.main-content .tag-select .tag {
+    float: left;
+    width: 33.333333333%;
+    line-height: 30px;
+    text-align: center;
+}
+
+.main-content .tag-contents {
+    margin: 0 !important;
+}
+
+.main-content .tag-contents .left {
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+    text-align: center;
+}
+.main-content .tag-contents .right {
+    float: left;
+    width: 49%;
+    text-align: center;
+}
+.main-content .tag-contents .image {
+    width: 100%;
+}
+
+.main-content .tag-contents .price {
+    border: 1px solid #efefef;
+}
+
+.main-content .tag-contents .price .icon {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 35%;
+}
+
+
+
+
+
+
+
+
+

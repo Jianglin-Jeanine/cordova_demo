@@ -106,6 +106,7 @@
                     <td class="center">滑动支付</td>
                 </tr>
             </table>
+        </div>
         </style>
         <script type="text/javascript">
             $(document).ready(function() {
@@ -122,14 +123,6 @@
                         event.preventDefault();
                     });
                 });
-                // $(".cancel-button").click(function() {
-                //     $(".buy-pannel").animate({
-                //         bottom: "-=" + $(".buy-pannel").height().toString(),
-                //     }, 300);
-                //     $(".buy-mask-bg").fadeOut(300);
-                //     $("body").css("overflow", "scroll");
-                //     $("body").unbind("touchmove");
-                // });
                 $(".buy-mask-bg").click(function() {
                     $(".buy-pannel").animate({
                         bottom: "-=" + $(".buy-pannel").height().toString(),
