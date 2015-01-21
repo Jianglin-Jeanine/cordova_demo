@@ -204,7 +204,7 @@ body {
     top: 64px;
     left: 0px;
     background: url("../img/1C/bg.png");
-    z-index: 4;
+    z-index: 20;
 }
 .share-pannel {
     background-color: white;
@@ -255,7 +255,7 @@ body {
     padding-right: 3px;
     padding-top: 6px;
     padding-bottom: 6px;
-    margin: 0;
+    margin: 0 !important;
 }
 
 .main-content .limited .images .image {
@@ -337,7 +337,18 @@ body {
     padding-right: 10px;
     height: 70px;
 }
-.main-content.profile .short-detail .detail-info .info-item {
+.main-content.profile .short-detail .detail-info .user-title {
+    height: 20px;
+    line-height: 20px;
+    width: 25%;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+.main-content.profile .short-detail .detail-info .info-items {
+
+}
+.main-content.profile .short-detail .detail-info .info-items .info-item {
     float: left;
     height: 70px;
     line-height: 20px;
