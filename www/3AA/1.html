@@ -20,7 +20,7 @@
 <html>
     <head>
         <link href="../css/demo.css" media="all" rel="stylesheet" type="text/css">
-        <link href="2DB.css" media="all" rel="stylesheet" type="text/css">
+        <link href="3AA.css" media="all" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <script type="text/javascript" src="../js/jquery-2.1.3.min.js"></script>
@@ -37,17 +37,8 @@
         <div class="header">
             <div class="header-title" id="common-title">布洛克皮鞋</div>
         </div>
-<!-- 
-        <style type="text/css">
-            #myCarousel .carousel-control.left {
-                background: none;
-            }
-            #myCarousel .carousel-control.right {
-                background: none;
-            }
-        </style>
-         -->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <div id="myCarousel" class="carousel slide" data-interval = "false">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -72,6 +63,87 @@
           </a>
         </div>
         <script type="text/javascript">
+
+        </script>
+
+        <div class="row images">
+            <div class="image"><img style="width:100%;" src="../img/limited/1/1a.png"></div>
+            <div class="image"><img style="width:100%;" src="../img/limited/1/2a.png"></div>
+            <div class="image"><img style="width:100%;" src="../img/limited/1/3a.png"></div>
+            <div class="image"><img style="width:100%;" src="../img/limited/1/4a.png"></div>
+        </div>
+        <div class="buy">买买买</div>
+        <div class="buy-mask-bg"></div>
+        <div class="buy-pannel">
+            <table class="table table-hover">
+                <tr>
+                    <td class="left">尺码</td>
+                    <td class="right">选择 +</td>
+                </tr>
+                <tr>
+                    <td class="left">数量</td>
+                    <td class="right">- 1 +</td>
+                </tr>
+                <tr>
+                    <td class="left">地址</td>
+                    <td class="right">添加 +</td>
+                </tr>
+                <tr>
+                    <td class="left">支付</td>
+                    <td class="right">支付宝 +</td>
+                </tr>
+                <tr>
+                    <td class="left">总价</td>
+                    <td class="right">￥￥￥</td>
+                </tr>
+
+            </table>
+            <table class="table table-hover">
+                <tr>
+                    <td class="center">加入购物车</td>
+                </tr>
+                <tr>
+                    <td class="center">滑动支付</td>
+                </tr>
+            </table>
+        </style>
+
+        <div>
+            
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".buy-pannel").css("bottom", (0 - $(".buy-pannel").height()).toString() + 'px');
+                $(".buy").click(function() {
+                    $(".buy-pannel").animate({
+                        bottom: "+=" + $(".buy-pannel").height().toString(),
+                    }, 200);
+                    $(".buy-mask-bg").height(($(window).height() - 64).toString() + 'px');
+                    $(".buy-mask-bg").width($(window).width().toString() + 'px');
+                    $(".buy-mask-bg").fadeIn(200);
+                    $("body").css("overflow", "hidden");
+                    $("body").bind("touchmove", function(event) {
+                        event.preventDefault();
+                    });
+                });
+                // $(".cancel-button").click(function() {
+                //     $(".buy-pannel").animate({
+                //         bottom: "-=" + $(".buy-pannel").height().toString(),
+                //     }, 200);
+                //     $(".buy-mask-bg").fadeOut(200);
+                //     $("body").css("overflow", "scroll");
+                //     $("body").unbind("touchmove");
+                // });
+                $(".buy-mask-bg").click(function() {
+                    $(".buy-pannel").animate({
+                        bottom: "-=" + $(".buy-pannel").height().toString(),
+                    }, 200);
+                    $(".buy-mask-bg").fadeOut(200);
+                    $("body").css("overflow", "scroll");
+                    $("body").unbind("touchmove");
+                });
+            });
 
         </script>
 

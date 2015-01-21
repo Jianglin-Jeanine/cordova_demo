@@ -246,7 +246,7 @@
                 $(".share").click(function() {
                     $(".share-pannel").animate({
                         bottom: "+=" + $(".share-pannel").height().toString(),
-                    }, 500);
+                    }, 200);
                     $(".share-mask-bg").height(($(window).height() - 64 - 49).toString() + 'px');
                     $(".share-mask-bg").width($(window).width().toString() + 'px');
                     $(".share-mask-bg").fadeIn(200);
@@ -258,7 +258,7 @@
                 $(".cancel-button").click(function() {
                     $(".share-pannel").animate({
                         bottom: "-=" + $(".share-pannel").height().toString(),
-                    }, 500);
+                    }, 200);
                     $(".share-mask-bg").fadeOut(200);
                     $("body").css("overflow", "scroll");
                     $("body").unbind("touchmove");
@@ -266,7 +266,7 @@
                 $(".share-mask-bg").click(function() {
                     $(".share-pannel").animate({
                         bottom: "-=" + $(".share-pannel").height().toString(),
-                    }, 500);
+                    }, 200);
                     $(".share-mask-bg").fadeOut(200);
                     $("body").css("overflow", "scroll");
                     $("body").unbind("touchmove");

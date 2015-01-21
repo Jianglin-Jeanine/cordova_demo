@@ -1,0 +1,33 @@
+
+.images {
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin: 0 !important;
+}
+
+.images .image {
+    width: 25%;
+    float: left;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    padding: 8px;
+    padding-left: 20px !important;
+    width: 50%;
+}
+.right {
+    padding-right: 20px !important;
+    text-align: right;
+}
+
+table {
+    margin:0px !important;
+}

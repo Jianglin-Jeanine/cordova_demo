@@ -252,7 +252,7 @@ body {
     padding-right: 3px;
     padding-top: 6px;
     padding-bottom: 6px;
-    margin: 0;
+    margin: 0 !important;
 }
 
 .main-content .limited .images .image {
