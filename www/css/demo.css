@@ -337,7 +337,18 @@ body {
     padding-right: 10px;
     height: 70px;
 }
-.main-content.profile .short-detail .detail-info .info-item {
+.main-content.profile .short-detail .detail-info .user-title {
+    height: 20px;
+    line-height: 20px;
+    width: 25%;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+.main-content.profile .short-detail .detail-info .info-items {
+
+}
+.main-content.profile .short-detail .detail-info .info-items .info-item {
     float: left;
     height: 70px;
     line-height: 20px;
@@ -355,6 +366,7 @@ body {
     line-height: 50px;
     color: #ffffff;
     text-align: center;
+    clear: both;
 }
 
 /* 2CA */

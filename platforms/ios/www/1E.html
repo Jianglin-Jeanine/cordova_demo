@@ -34,37 +34,30 @@
     </head>
     <body>
         <div class="header">
-            <div class="header-title" id="common-title">PROFILE</div>
+            <div class="header-left"><img class="icon" src="img/1E/bell.png"></div>
+            <div class="header-title" id="common-title">Charles</div>
+            <div class="header-right"><img class="icon" src="img/1E/setting.png"></div>
         </div>
-        <div class="main-content">
-            <div class="name-pad">Charles <span>Edit</span></div>
+        <div class="main-content profile">
             <div class="short-detail">
-                <div class="avatar"><img src=""></div>
+                <div class="avatar"><img src="img/1E/avatar.png"></div>
                 <div class="detail-info">
-                    <div class="info-item">250 posts</div>
-                    <div class="info-item">250 关注</div>
-                    <div class="info-item">250 粉丝</div>
-                    <div class="info-item">250 被钻</div>
+                    <div class="user-title">独立设计师</div>
+                    <div class="info-item">209<br>Posts</div>
+                    <div class="info-item">97<br>Chasing</div>
+                    <div class="info-item">1482<br>Fans</div>
+                    <div class="info-item">9037<br>Jewels</div>
                 </div>
             </div>
             <div class="dashboard">
-                <div class="group1">
-                    <div class="dashboard-item">Posts</div>
-                    <div class="dashboard-item">Wishlist</div>
-                    <div class="dashboard-item">Followed</div>
-                </div>
-                <div class="group2">
-                    <div class="dashboard-item">Cart</div>
-                    <div class="dashboard-item">Address</div>
-                </div>
-                <div class="group3">
-                    <div class="dashboard-item">Orders</div>
-                    <div class="dashboard-item">Brands</div>
-                </div>
-                <div class="group4">
-                    <div class="dashboard-item">Linked Accounts</div>
-                    <div class="dashboard-item">Settings</div>
-                </div>
+                <div class="dashboard-item">POSTS</div>
+                <div class="dashboard-item">FAVORITES</div>
+                <div class="dashboard-item">SAVED</div>
+                <div class="dashboard-item">CART</div>
+                <div class="dashboard-item">ADDRESSES</div>
+                <div class="dashboard-item">ORDERS</div>
+                <div class="dashboard-item">BRANDS</div>
+                <div class="dashboard-item">EDIT PROFILE</div>
             </div>
         </div>
         <div class="footer">
@@ -74,6 +67,11 @@
             <a href="1D.html"><div class="footer-button"><img src="img/bottom_bar/bottomBarShop.png"></div></a>
             <a href="1E.html"><div class="footer-button selected"><img src="img/bottom_bar/bottomBarProfile.png"></div></a>
         </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".main-content.profile").height(($(window).height() - 64 - 49).toString() + 'px');
+            })
+        </script>
     </body>
 </html>
 
