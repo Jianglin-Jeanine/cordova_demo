@@ -41,11 +41,11 @@
             <form class="input-form">
                 <textarea class="input-area"></textarea>
             </form>
-            <div class="row tool-bar">
+            <div class="row tool-bar1">
                 <div class="tool-item col-xs-6">location</div>
                 <div class="tool-item col-xs-6"><img src="img/2CA/privacy.png"></div>
             </div>
-            <div class="row tool-bar">
+            <div class="row tool-bar2">
                 <div class="tool-item col-xs-2 col-xs-offset-1"><img src="img/2CA/img.png"></div>
                 <div class="tool-item col-xs-2"><img src="img/2CA/at.png"></div>
                 <div class="tool-item col-xs-2"><img src="img/2CA/tag.png"></div>
@@ -53,6 +53,15 @@
                 <div class="tool-item col-xs-2"><img src="img/2CA/star.png"></div>
             </div>
         </div>
+        <script type="text/javascript">
+            $(".tool-bar2").hide();
+            $(".input-area").focus(function() {
+                $(".tool-bar2").fadeIn(300);
+            });
+            $(".input-area").focusout(function() {
+                $(".tool-bar2").fadeOut(300);
+            });
+        </script>
     </body>
 </html>
 

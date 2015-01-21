@@ -12,4 +12,3 @@
     <preference name="DisallowOverscroll" value="true" />
     <access origin="*" />
 </widget>
-

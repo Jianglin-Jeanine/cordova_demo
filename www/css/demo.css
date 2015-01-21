@@ -210,7 +210,7 @@ body {
     background-color: white;
     position: fixed;
     bottom: 49px;
-    z-index: 5;
+    z-index: 21;
     width: 100%;
 }
 .share-pannel .share-options {
@@ -447,15 +447,27 @@ body {
 .guandian .input-area {
     outline: none;
 }
-.tool-bar {
-    border-bottom: 1px solid #000000;
+.tool-bar1 {
     margin: 0;
 }
-.tool-bar .tool-item {
+.tool-bar1 .tool-item {
     text-align: center;
     height: 25px;
 }
-.tool-bar .tool-item img {
+.tool-bar1 .tool-item img {
+    height: 100%;
+}
+.tool-bar2 {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    margin: 0;
+    margin-top: 43px;
+}
+.tool-bar2 .tool-item {
+    text-align: center;
+    height: 25px;
+}
+.tool-bar2 .tool-item img {
     height: 100%;
 }
 /* 2CB */
