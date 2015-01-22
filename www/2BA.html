@@ -20,7 +20,6 @@
 <html>
     <head>
         <link href="css/demo.css" media="all" rel="stylesheet" type="text/css">
-        <link href="3AA/3AA.css" media="all" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
@@ -36,109 +35,48 @@
     <body>
         <div class="header">
             <div class="header-left"><a href="javascript: history.go(-1)"><img class="icon" src="img/top_bar/back.png"></a></div>
-            <div class="header-title" id="common-title"></div>
-            <div class="header-right"><img class="share" src="img/1A/share.png"></div>
+            <div class="header-title" id="common-title">#格子</div>
+            <div class="header-right"><img class="icon" src="img/top_bar/search.png"></div>
+            </div>
+            <a href="2BB.html">
         </div>
         <div class="main-content">
-            <div style="padding:0px;" class="posts">
-                <div style="border:0px;" class="post">
+             <div style="padding:0px;border-top:1px solid #000000;" class="posts">
+                <div  class="post">
                     <div class="post-content">
-                        <img class="post-img" src="img/2AA/1.png">
+                        <a href="2AA.html"><img class="post-img" src="img/2BA/1.png"></a>
                         <div class="post-tag">
-                            <a href="2BA.html"><img src="img/2AA/2.png"></a>
+                            <img src="img/1A/tag1.png">
                         </div>
+                        <div class="post-text">
+                            <img src="img/1A/text1.png">
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="share"><img src="img/1A/share.png"></div>
+                        <a href="4AC.html"><div class="comment"><img src="img/1A/comment.png"></div></a>
+                        <div class="like"><img src="img/1A/like.png"></div>
                     </div>
                 </div>
             </div>
-            <div style="border-top: 3px solid #000000;border-bottom: 3px solid #000000;">
-                <div class="row content-intro">
-                    <div id="intro-a"><a href="3AA/1.html"><img class="image" src="img/2AA/3.png"></a></div>
-                    <div id="intro-b" class="buy"><img class="image" src="img/2AA/7.png"></div>
-                    <div id="intro-c">详情 +</div>
-                </div>
-                <div class="row content-intro">
-                    <div id="intro-a"><a href="3AA/1.html"><img class="image" src="img/2AA/4.png"></a></div>
-                    <div id="intro-b" class="buy"><img class="image" src="img/2AA/8.png"></div>
-                    <div id="intro-c">详情 +</div>
-                </div>
-                <div class="row content-intro">
-                    <div id="intro-a"><a href="3AA/1.html"><img class="image" src="img/2AA/5.png"></a></div>
-                    <div id="intro-b" class="buy"><img class="image" src="img/2AA/9.png"></div>
-                    <div id="intro-c">详情 +</div>
-                </div>
-                <div class="row content-intro">
-                    <div id="intro-a"><a href="3AA/1.html"><img class="image" src="img/2AA/6.png"></a></div>
-                    <div id="intro-b" class="buy"><img class="image" src="img/2AA/10.png"></div>
-                    <div id="intro-c">详情 +</div>
+             <div style="padding:0px;" class="posts">
+                <div  class="post">
+                    <div class="post-content">
+                        <a href="2AA.html"><img class="post-img" src="img/2BA/2.png"></a>
+                        <div class="post-tag">
+                            <img src="img/2BA/3.png">
+                        </div>
+                        <div class="post-text">
+                            <img src="img/2BA/4.png">
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="share"><img src="img/1A/share.png"></div>
+                        <a href="4AC.html"><div class="comment"><img src="img/1A/comment.png"></div></a>
+                        <div class="like"><img src="img/1A/like.png"></div>
+                    </div>
                 </div>
             </div>
-            <div class="comment-list">
-                <img class="image" src="img/2AA/11.png">
-            </div>
-            <div class="comment-number"><img class="image" src="img/2AB/7.png"></div>
-            <div class="comment-list lists"><img class="image" src="img/2AA/12.png"></div>
-            <div class="comment-list lists"><img class="image" src="img/2AA/13.png"></div>
-            <div class="comment-list lists"><img class="image" src="img/2AA/12.png"></div>
-            <div class="comment-list lists"><img class="image" src="img/2AA/13.png"></div>
-        </div>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $(".buy-pannel").css("bottom", (0 - $(".buy-pannel").height()).toString() + 'px');
-                $(".buy").click(function() {
-                    $(".buy-pannel").animate({
-                        bottom: "+=" + $(".buy-pannel").height().toString(),
-                    }, 300);
-                    $(".buy-mask-bg").height(($(window).height() - 64).toString() + 'px');
-                    $(".buy-mask-bg").width($(window).width().toString() + 'px');
-                    $(".buy-mask-bg").fadeIn(300);
-                    $("body").css("overflow", "hidden");
-                    $("body").bind("touchmove", function(event) {
-                        event.preventDefault();
-                    });
-                });
-                $(".buy-mask-bg").click(function() {
-                    $(".buy-pannel").animate({
-                        bottom: "-=" + $(".buy-pannel").height().toString(),
-                    }, 300);
-                    $(".buy-mask-bg").fadeOut(300);
-                    $("body").css("overflow", "scroll");
-                    $("body").unbind("touchmove");
-                });
-            });
-        </script>
-        <div class="buy-mask-bg"></div>
-        <div class="buy-pannel">
-            <table class="table table-hover">
-                <tr>
-                    <td class="left">尺码</td>
-                    <td class="right">选择 +</td>
-                </tr>
-                <tr>
-                    <td class="left">数量</td>
-                    <td class="right">- 1 +</td>
-                </tr>
-                <tr>
-                    <td class="left">地址</td>
-                    <td class="right">添加 +</td>
-                </tr>
-                <tr>
-                    <td class="left">支付</td>
-                    <td class="right">支付宝 +</td>
-                </tr>
-                <tr>
-                    <td class="left">总价</td>
-                    <td class="right">￥￥￥</td>
-                </tr>
-
-            </table>
-            <table class="table table-hover">
-                <tr>
-                    <td class="center">加入购物车</td>
-                </tr>
-                <tr>
-                    <td class="center">滑动支付</td>
-                </tr>
-            </table>
         </div>
         <div class="share-mask-bg"></div>
         <div class="share-pannel">
@@ -193,6 +131,5 @@
         </script>
     </body>
 </html>
-
 
 
