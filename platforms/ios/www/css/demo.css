@@ -509,6 +509,62 @@ body {
     height: 100%;
 }
 
+
+/* 2AB */
+.main-content .content-intro {
+    border-top: 1px solid #EFEFEF;
+    border-bottom: 1px solid #EFEFEF;
+    height: 62px;
+}
+
+.main-content .content-intro #intro-a {
+    float: left;
+    width: 60%;
+    height: 60px;
+}
+
+.main-content .content-intro #intro-a .image {
+    height: 100%;
+}
+
+.main-content .content-intro #intro-b {
+    float: left;
+    width: 20%;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}
+
+.main-content .content-intro #intro-b .image {
+    height: 25px;
+}
+
+.main-content .content-intro #intro-c {
+    float: left;
+    width: 20%;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}
+
+.main-content .comment-list .image {
+    width: 100%;
+}
+
+.main-content .comment-list.lists {
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.main-content .comment-number {
+    height: 24px;
+    border-top: 1px solid #EFEFEF;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.main-content .comment-number .image {
+    height: 20px;
+}
+
 /* 2BB */
 
 .main-content .tag-select {

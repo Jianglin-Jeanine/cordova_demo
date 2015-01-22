@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <link href="css/demo.css" media="all" rel="stylesheet" type="text/css">
+        <link href="3AA/3AA.css" media="all" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery.resizeimagetoparent.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <title>Jeanine</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-left"><a href="javascript: history.go(-1)"><img class="icon" src="img/top_bar/back.png"></a></div>
+            <div class="header-title" id="common-title"></div>
+            <div class="header-right"><img class="icon" src="img/top_bar/search.png"></div>
+        </div>
+        <div class="main-content">
+            <div style="padding:0px;" class="posts">
+                <div style="border:0px;" class="post">
+                    <div class="post-content">
+                        <img class="post-img" src="img/2AA/1.png">
+                        <div class="post-tag">
+                            <img src="img/2AA/2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="border-top: 3px solid #000000;border-bottom: 3px solid #000000;">
+                <div class="row content-intro">
+                    <div id="intro-a"><a href="3AA/1.html"><img class="image" src="img/2AA/3.png"></a></div>
+                    <div id="intro-b" class="buy"><img class="image" src="img/2AA/7.png"></div>
+                    <div id="intro-c">详情 +</div>
+                </div>
+                <div class="row content-intro">
+                    <div id="intro-a"><a href="3AA/1.html"><img class="image" src="img/2AA/4.png"></a></div>
+                    <div id="intro-b" class="buy"><img class="image" src="img/2AA/8.png"></div>
+                    <div id="intro-c">详情 +</div>
+                </div>
+                <div class="row content-intro">
+                    <div id="intro-a"><a href="3AA/1.html"><img class="image" src="img/2AA/5.png"></a></div>
+                    <div id="intro-b" class="buy"><img class="image" src="img/2AA/9.png"></div>
+                    <div id="intro-c">详情 +</div>
+                </div>
+                <div class="row content-intro">
+                    <div id="intro-a"><a href="3AA/1.html"><img class="image" src="img/2AA/6.png"></a></div>
+                    <div id="intro-b" class="buy"><img class="image" src="img/2AA/10.png"></div>
+                    <div id="intro-c">详情 +</div>
+                </div>
+            </div>
+            <div class="comment-list">
+                <img class="image" src="img/2AA/11.png">
+            </div>
+            <div class="comment-number"><img class="image" src="img/2AB/7.png"></div>
+            <div class="comment-list lists"><img class="image" src="img/2AA/12.png"></div>
+            <div class="comment-list lists"><img class="image" src="img/2AA/13.png"></div>
+            <div class="comment-list lists"><img class="image" src="img/2AA/12.png"></div>
+            <div class="comment-list lists"><img class="image" src="img/2AA/13.png"></div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".buy-pannel").css("bottom", (0 - $(".buy-pannel").height()).toString() + 'px');
+                $(".buy").click(function() {
+                    $(".buy-pannel").animate({
+                        bottom: "+=" + $(".buy-pannel").height().toString(),
+                    }, 300);
+                    $(".buy-mask-bg").height(($(window).height() - 64).toString() + 'px');
+                    $(".buy-mask-bg").width($(window).width().toString() + 'px');
+                    $(".buy-mask-bg").fadeIn(300);
+                    $("body").css("overflow", "hidden");
+                    $("body").bind("touchmove", function(event) {
+                        event.preventDefault();
+                    });
+                });
+                $(".buy-mask-bg").click(function() {
+                    $(".buy-pannel").animate({
+                        bottom: "-=" + $(".buy-pannel").height().toString(),
+                    }, 300);
+                    $(".buy-mask-bg").fadeOut(300);
+                    $("body").css("overflow", "scroll");
+                    $("body").unbind("touchmove");
+                });
+            });
+        </script>
+        <div class="buy-mask-bg"></div>
+        <div class="buy-pannel">
+            <table class="table table-hover">
+                <tr>
+                    <td class="left">尺码</td>
+                    <td class="right">选择 +</td>
+                </tr>
+                <tr>
+                    <td class="left">数量</td>
+                    <td class="right">- 1 +</td>
+                </tr>
+                <tr>
+                    <td class="left">地址</td>
+                    <td class="right">添加 +</td>
+                </tr>
+                <tr>
+                    <td class="left">支付</td>
+                    <td class="right">支付宝 +</td>
+                </tr>
+                <tr>
+                    <td class="left">总价</td>
+                    <td class="right">￥￥￥</td>
+                </tr>
+
+            </table>
+            <table class="table table-hover">
+                <tr>
+                    <td class="center">加入购物车</td>
+                </tr>
+                <tr>
+                    <td class="center">滑动支付</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
+
+
+
