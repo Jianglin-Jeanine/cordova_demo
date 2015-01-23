@@ -219,8 +219,8 @@
                     $("#quanbu-content").show();
                 });
 
-                $(".buy-pannel").css("bottom", (0 - $(".buy-pannel").height()).toString() + 'px');
-                $(".icon").click(function() {
+                $(".buy-pannel").css("bottom", (49 - $(".buy-pannel").height()).toString() + 'px');
+                $(".price .icon").click(function() {
                     $(".buy-pannel").animate({
                         bottom: "+=" + $(".buy-pannel").height().toString(),
                     }, 300);
@@ -275,6 +275,13 @@
                     <td class="center">滑动支付</td>
                 </tr>
             </table>
+        </div>
+        <div class="footer">
+            <a href="1A.html"><div class="footer-button"><img src="img/bottom_bar/bottomBarHome.png"></div></a>
+            <a href="1B.html"><div class="footer-button"><img src="img/bottom_bar/bottomBarExplore.png"></div></a>
+            <a href="1C.html"><div class="footer-button"><img src="img/bottom_bar/bottomBarAdd.png"></div></a>
+            <a href="1D.html"><div class="footer-button"><img src="img/bottom_bar/bottomBarShop.png"></div></a>
+            <a href="1E.html"><div class="footer-button"><img src="img/bottom_bar/bottomBarProfile.png"></div></a>
         </div>
     </body>
 </html>

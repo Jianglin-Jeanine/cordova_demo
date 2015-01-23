@@ -40,13 +40,120 @@
         </div>
         <div class="main-content">
             <img class="main-image" src="../img/shop_topics/4a.png">
-        </div>
-        <div class="goods">
-            <div>
-                <div class="single">
-                    
+            <div class="row tag-contents">
+                <div class="left">
+                    <a href="../3AA/1.html"><img class="image" src="../img/2BB/1.jpg"></a>
+                    <div class="price">
+                        <div>YingYing</div>
+                        <div>黑玫瑰耳环</div>
+                        <img class="icon" src="../img/price/1.png">
+                    </div>
+                    <a href="../3AA/1.html"><img class="image" src="../img/2BB/2.jpg"></a>
+                    <div class="price">
+                        <div>BUBU</div>
+                        <div>BUBU限量高跟鞋</div>
+                        <img class="icon" src="../img/price/2.png">
+                    </div>
+                    <a href="../3AA/1.html"><img class="image" src="../img/2BB/4.jpg"></a>
+                    <div class="price">
+                        <div>Prada</div>
+                        <div>黑色限量手提袋</div>
+                        <img class="icon" src="../img/price/3.png">
+                    </div>
+                    <a href="../3AA/1.html"><img class="image" src="../img/2BB/5.jpg"></a>
+                    <div class="price">
+                        <div>Ferragamo</div>
+                        <div>Ferragamo限量高跟鞋</div>
+                        <img class="icon" src="../img/price/4.png">
+                    </div>
+                </div>
+                <div style="padding-top:10px;" class="right">
+                    <a href="../3AA/1.html"><img class="image" src="../img/2BB/3.jpg"></a>
+                    <div class="price">
+                        <div>BUBU</div>
+                        <div>BUBU限量凉鞋</div>
+                        <img class="icon" src="../img/price/2.png">
+                    </div>
+                    <a href="../3AA/1.html"><img class="image" src="../img/2BB/6.jpg"></a>
+                    <div class="price">
+                        <div>Gucci</div>
+                        <div>Gucci限量平底鞋</div>
+                        <img class="icon" src="../img/price/3.png">
+                    </div>
+                    <a href="../3AA/1.html"><img class="image" src="../img/2BB/7.jpg"></a>
+                    <div class="price">
+                        <div>CharlesWang</div>
+                        <div>黑色雪纺礼服</div>
+                        <img class="icon" src="../img/price/4.png">
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="footer">
+            <a href="../1A.html"><div class="footer-button"><img src="../img/bottom_bar/bottomBarHome.png"></div></a>
+            <a href="../1B.html"><div class="footer-button"><img src="../img/bottom_bar/bottomBarExplore.png"></div></a>
+            <a href="../1C.html"><div class="footer-button"><img src="../img/bottom_bar/bottomBarAdd.png"></div></a>
+            <a href="../1D.html"><div class="footer-button"><img src="../img/bottom_bar/bottomBarShop.png"></div></a>
+            <a href="../1E.html"><div class="footer-button"><img src="../img/bottom_bar/bottomBarProfile.png"></div></a>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".buy-pannel").css("bottom", (49 - $(".buy-pannel").height()).toString() + 'px');
+                $(".price .icon").click(function() {
+                    $(".buy-pannel").animate({
+                        bottom: "+=" + $(".buy-pannel").height().toString(),
+                    }, 300);
+                    $(".buy-mask-bg").height(($(window).height() - 64).toString() + 'px');
+                    $(".buy-mask-bg").width($(window).width().toString() + 'px');
+                    $(".buy-mask-bg").fadeIn(300);
+                    $("body").css("overflow", "hidden");
+                    $("body").bind("touchmove", function(event) {
+                        event.preventDefault();
+                    });
+                });
+                $(".buy-mask-bg").click(function() {
+                    $(".buy-pannel").animate({
+                        bottom: "-=" + $(".buy-pannel").height().toString(),
+                    }, 300);
+                    $(".buy-mask-bg").fadeOut(300);
+                    $("body").css("overflow", "scroll");
+                    $("body").unbind("touchmove");
+                });
+            });
+        </script>
+        <div class="buy-mask-bg"></div>
+        <div class="buy-pannel">
+            <table class="table table-hover">
+                <tr>
+                    <td class="left">尺码</td>
+                    <td class="right">选择 +</td>
+                </tr>
+                <tr>
+                    <td class="left">数量</td>
+                    <td class="right">- 1 +</td>
+                </tr>
+                <tr>
+                    <td class="left">地址</td>
+                    <td class="right">添加 +</td>
+                </tr>
+                <tr>
+                    <td class="left">支付</td>
+                    <td class="right">支付宝 +</td>
+                </tr>
+                <tr>
+                    <td class="left">总价</td>
+                    <td class="right">￥￥￥</td>
+                </tr>
+
+            </table>
+            <table class="table table-hover">
+                <tr>
+                    <td class="center">加入购物车</td>
+                </tr>
+                <tr>
+                    <td class="center">滑动支付</td>
+                </tr>
+            </table>
         </div>
     </body>
 </html>

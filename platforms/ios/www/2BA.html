@@ -78,6 +78,13 @@
                 </div>
             </div>
         </div>
+        <div class="footer">
+            <a href="1A.html"><div class="footer-button"><img src="img/bottom_bar/bottomBarHome.png"></div></a>
+            <a href="1B.html"><div class="footer-button"><img src="img/bottom_bar/bottomBarExplore.png"></div></a>
+            <a href="1C.html"><div class="footer-button"><img src="img/bottom_bar/bottomBarAdd.png"></div></a>
+            <a href="1D.html"><div class="footer-button"><img src="img/bottom_bar/bottomBarShop.png"></div></a>
+            <a href="1E.html"><div class="footer-button"><img src="img/bottom_bar/bottomBarProfile.png"></div></a>
+        </div>
         <div class="share-mask-bg"></div>
         <div class="share-pannel">
             <div class="share-options">
@@ -98,7 +105,7 @@
         </div>
         <script type="text/javascript">
             $(document).ready(function() {
-                $(".share-pannel").css("bottom", (0 - $(".share-pannel").height()).toString() + 'px');
+                $(".share-pannel").css("bottom", (49 - $(".share-pannel").height()).toString() + 'px');
                 $(".share").click(function() {
                     $(".share-pannel").animate({
                         bottom: "+=" + $(".share-pannel").height().toString(),

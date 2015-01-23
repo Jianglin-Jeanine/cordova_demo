@@ -1,4 +1,19 @@
 
+/* 商品页 */
+
+#myCarousel:after {                   
+    position:absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    display: block;
+    content: "";
+    height: 13%;
+    width: 100%;
+    background: url(../img/3AA/5.png) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
 .images {
     padding-left: 3px;
     padding-right: 3px;
@@ -14,9 +29,33 @@
     padding-right: 3px;
 }
 
-.center {
+.sell-progress {
+    width: 100%;
+}
+
+.buy-choices .choices {
+    float: left;
+    width: 70%;
+}
+
+.buy-choices .options {
+    float: left;
+    width: 30%;
     text-align: center;
 }
+
+.buy-choices .options .image {
+    padding-top: 8%;
+    width: 70%;
+}
+
+#tags {
+    position: absolute;
+    top: 74px;
+    height: 40px;
+    width: 100%;
+}
+
 
 /* buy pennel setting 8*/
 .buy-mask-bg {
@@ -43,6 +82,11 @@
     padding-right: 20px !important;
     text-align: right;
 }
+
+.center {
+    text-align: center;
+}
+
 
 table {
     margin:0px !important;
