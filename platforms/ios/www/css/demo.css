@@ -635,6 +635,8 @@ body {
     background: #f1f1f1;
     padding-left: 15px;
     padding-right: 15px;
+    position: fixed;
+    bottom: 0;
 }
 .main-content.comments-page .comment-input .input-form .input-field {
     width: 87%;
@@ -674,10 +676,8 @@ body {
 .main-content.brands .list-nav {
     margin-top: 15px;
     position: fixed;
-    right: 20px;
+    right: 15px;
     width: 30px;
-    border-radius: 15px;
-    background: #ebebeb;
     list-style: none;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -689,6 +689,11 @@ body {
     text-align: center;
     font-size: 14px;
 }
-.main-content.brands .brand-list {
-    list-style: none;
+.main-content.brands .brand-list .anchor-dest {
+    height: 64px;
+    margin-top: -64px;
+    visibility: hidden;
+}
+.main-content.brands .brand-list img {
+    width: 100%;
 }
