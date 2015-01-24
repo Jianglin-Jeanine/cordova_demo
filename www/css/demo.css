@@ -513,6 +513,7 @@ body {
 
 /* 2AB */
 .main-content .content-intro {
+    margin: 0px !important;
     border-top: 1px solid #EFEFEF;
     border-bottom: 1px solid #EFEFEF;
     height: 62px;
