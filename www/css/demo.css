@@ -666,7 +666,29 @@ body {
 
 /* 4ABC */
 
-
-
-
-
+/* 2DC */
+.main-content.brands {
+    padding-top: 64px;
+    padding-bottom: 49px;
+}
+.main-content.brands .list-nav {
+    margin-top: 15px;
+    position: fixed;
+    right: 15px;
+    width: 30px;
+    border-radius: 15px;
+    background: #ebebeb;
+    list-style: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    clear: both;
+}
+.main-content.brands .list-nav li {
+    float: left;
+    width: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+.main-content.brands .brand-list {
+    list-style: none;
+}
