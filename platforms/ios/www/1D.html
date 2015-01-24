@@ -44,7 +44,7 @@
             <div class="tag-bar">
                 <!-- <div class="tag"><img style="height:30px;width:100%;" src="img/shop_topics/tab.png"></div> -->
                 <div id="a" class="tag selected">BEST</div>
-                <a href="2DC.html"><div id="b" class="tag">ALL</div></a>
+                <div id="b" class="tag">ALL</div>
                 <div id="c" class="tag">SALE</div>
                 <div id="d" class="tag">SHIRT</div>
                 <div id="e" class="tag">BAG</div>
@@ -76,6 +76,53 @@
             <div class="tag-topics">
 
             </div>
+            <div class="brands">
+                <div class="list-nav">
+                <a href="#A"><li>A</li></a>
+                <a href="#B"><li>B</li></a>
+                <a href="#C"><li>C</li></a>
+                <a href="#D"><li>D</li></a>
+                <a href="#E"><li>E</li></a>
+                <a href="#F"><li>F</li></a>
+                <a href="#G"><li>G</li></a>
+                <a href="#H"><li>H</li></a>
+                <a href="#I"><li>I</li></a>
+                <a href="#J"><li>J</li></a>
+                <a href="#K"><li>K</li></a>
+                <a href="#L"><li>L</li></a>
+                <a href="#M"><li>M</li></a>
+                <a href="#N"><li>N</li></a>
+                <a href="#O"><li>O</li></a>
+                <a href="#P"><li>P</li></a>
+                <a href="#Q"><li>Q</li></a>
+                <a href="#R"><li>R</li></a>
+                <a href="#S"><li>S</li></a>
+                <a href="#T"><li>T</li></a>
+                <a href="#U"><li>U</li></a>
+                <a href="#V"><li>V</li></a>
+                <a href="#W"><li>W</li></a>
+                <a href="#X"><li>X</li></a>
+                <a href="#Y"><li>Y</li></a>
+                <a href="#Z"><li>Z</li></a>
+            </div>
+            <div class="brand-list">
+                <div class="anchor-dest" id="A"></div>
+                <div><img src="img/2DC/A.png"></div>
+                <div><img src="img/2DC/A.png"></div>
+                <div><img src="img/2DC/A.png"></div>
+                <div class="anchor-dest" id="B"></div>
+                <div><img src="img/2DC/B.png"></div>
+                <div><img src="img/2DC/B.png"></div>
+                <div><img src="img/2DC/B.png"></div>
+                <div class="anchor-dest" id="C"></div>
+                <div><img src="img/2DC/C.png"></div>
+                <div><img src="img/2DC/C.png"></div>
+                <div><img src="img/2DC/C.png"></div>
+                <div class="anchor-dest" id="D"></div>
+                <div><img src="img/2DC/D.png"></div>
+                <div><img src="img/2DC/D.png"></div>
+            </div>
+            </div>
         </div>
         <div class="footer">
             <a href="1A.html"><div class="footer-button"><img src="img/bottom_bar/bottomBarHome.png"></div></a>
@@ -85,6 +132,7 @@
             <a href="1E.html"><div class="footer-button"><img src="img/bottom_bar/bottomBarProfile.png"></div></a>
         </div>
         <script type="text/javascript">
+            $("brands").hide();
             function remove() {
                 $("#a").removeClass("selected");
                 $("#b").removeClass("selected");
@@ -96,26 +144,38 @@
             $("#a").click(function() {
                 remove();
                 $("#a").addClass("selected");
+                $(".shop-topics").show();
+                $(".brands").hide();
             });
             $("#b").click(function() {
                 remove();
                 $("#b").addClass("selected");
+                $(".shop-topics").hide();
+                $(".brands").show();
             });
             $("#c").click(function() {
                 remove();
                 $("#c").addClass("selected");
+                $(".shop-topics").show();
+                $(".brands").hide();
             });
             $("#d").click(function() {
                 remove();
                 $("#d").addClass("selected");
+                $(".shop-topics").show();
+                $(".brands").hide();
             });
             $("#e").click(function() {
                 remove();
                 $("#e").addClass("selected");
+                $(".shop-topics").show();
+                $(".brands").hide();
             });
             $("#f").click(function() {
                 remove();
                 $("#f").addClass("selected");
+                $(".shop-topics").show();
+                $(".brands").hide();
             });
         </script>
     </body>

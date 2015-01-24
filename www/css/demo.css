@@ -290,13 +290,15 @@ body {
 /* 1D */
 .main-content .tag-bar {
     height: 30px;
+    position: fixed;
+    width: 100%;
 }
 
 .main-content .tag-bar .tag.selected {
     background: url(../img/shop_topics/tab.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: center center; 
+    background-position: center center;
 }
 
 .main-content .tag-bar .tag {
@@ -308,9 +310,12 @@ body {
     line-height: 30px;
     text-align: center;
     font-weight: bold;
+    background: #ffffff;
 
 }
-
+.main-content .shop-topics {
+    padding-top: 30px
+}
 .main-content .shop-topics .shop-topic .topic-img {
     width: 100%;
 }
@@ -513,6 +518,7 @@ body {
 
 /* 2AB */
 .main-content .content-intro {
+    margin: 0px !important;
     border-top: 1px solid #EFEFEF;
     border-bottom: 1px solid #EFEFEF;
     height: 62px;
@@ -669,31 +675,31 @@ body {
 /* 4ABC */
 
 /* 2DC */
-.main-content.brands {
+.brands {
     padding-top: 64px;
     padding-bottom: 49px;
 }
-.main-content.brands .list-nav {
+.brands .list-nav {
     margin-top: 15px;
     position: fixed;
-    right: 15px;
+    right: 10px;
     width: 30px;
     list-style: none;
     padding-top: 15px;
     padding-bottom: 15px;
     clear: both;
 }
-.main-content.brands .list-nav li {
+.brands .list-nav li {
     float: left;
     width: 30px;
     text-align: center;
     font-size: 14px;
 }
-.main-content.brands .brand-list .anchor-dest {
-    height: 64px;
-    margin-top: -64px;
+.brands .brand-list .anchor-dest {
+    height: 94px;
+    margin-top: -94px;
     visibility: hidden;
 }
-.main-content.brands .brand-list img {
+.brands .brand-list img {
     width: 100%;
 }
